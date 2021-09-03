@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 2. Section: What is TOR & How Does TOR Work ?</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn" data-toggle="canvas" data-target="#bs-canvas-left" aria-expanded="false" aria-controls="bs-canvas-left"><i class="fa fa-align-justify fa-lg"></i></a><a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn" data-toggle="canvas" data-target="#bs-canvas-left" aria-expanded="false" aria-controls="bs-canvas-left"><i class="fa fa-align-justify fa-lg"></i></a><a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+<div id="bs-canvas-left" class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed bg-kanvas h-100" >
+	<header class="bs-canvas-header p-3 bg-baslık">
+		
+    	<h4 align="center" >Lectures<button type="button" class="bs-canvas-close close" aria-label="Close" aria-expanded="true"><span aria-hidden="true" >×</span></button></h4>
+        
+    </header>
+    <div class="bs-canvas-content px-3">
+    	
+    	<div align="center" class="list-group my-2 ">
+			<a href="#what-is-tor-" class="list-group-item list-group-item-action" >What is Tor?</a>
+			<a href="#how-does-tor-work-" class="list-group-item list-group-item-action" >How Does Tor Work ?</a>
+			<a href="#what-makes-the-tor-network-secure-" class="list-group-item list-group-item-action" >What Makes the Tor Network Secure?</a>
+          	<a href="#fundamental-weakness-1" class="list-group-item list-group-item-action" >Fundamental Weakness - 1</a>
+          	<a href="#fundamental-weakness-2" class="list-group-item list-group-item-action" >Fundamental Weakness - 2</a>
+			<a href="#fundamental-weakness-3" class="list-group-item list-group-item-action" >Fundamental Weakness - 3</a>
+			<a href="#malicious-exit-nodes" class="list-group-item list-group-item-action" >Malicious Exit Nodes</a>
+          	<a href="#timing-analysis-attacks" class="list-group-item list-group-item-action" >Timing Analysis Attacks</a>
+          	<a href="#tor-hidden-services" class="list-group-item list-group-item-action" >Tor Hidden Services</a>
+			<a href="#surface-web" class="list-group-item list-group-item-action" >Surface Web</a>
+			<a href="#deep-web" class="list-group-item list-group-item-action" >Deep Web</a>
+			<a href="#dark-web" class="list-group-item list-group-item-action" >Dark Web</a>
+			<a href="#accessing-the-tor-network" class="list-group-item list-group-item-action" >Accessing the Tor Network</a>
+			<a href="#is-it-legal-to-use-the-tor-network-" class="list-group-item list-group-item-action" >Is It Legal to Use the Tor Network?</a>
+			<hr>
+			<a href="#feedback" class="list-group-item list-group-item-action">Give Feedback</a>
+			
+          	
+        </div>
+		
+		
+    </div>    
+</div>
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">2. Section</strong>
+          <h3 class="mb-0">What is TOR & How Does TOR Work ?</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article id="makale" class="markdown-body entry-content" itemprop="text">
+<h3 id="what-is-tor-">What is Tor?</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/33jHlepnB7g" allowfullscreen></iframe>
+</div>
+
+<p>The Tor project is an intelligence solution developed by the US Navy, to protect the U.S. intelligence communications online. Nowadays, however, it continues to serve as a non-profit open source organization that promotes privacy online, and is open to the masses. If you don&#39;t know what the expression &quot;open source&quot; means here; open source means that all source code of the project is shared publicly. Since all the source codes of the project are <a class="d-inline-block mb-0 text-danger" href="https://github.com/TheTorProject">shared</a> openly, the project can be developed much faster by many volunteers, ensuring the absence of malicious code. To sum up; If any project is open source, that project is under everyone&#39;s control.</p>
+<p>The main source of funding for the Tor Project <a class="d-inline-block mb-0 text-danger" href="https://www.torproject.org/about/sponsors/">comes from donations</a> collected from volunteers, as well as a large amount of support received from many sponsors, including the American government. Interestingly, while some agencies of the US government provide substantial support for the development of the project, others routinely spend a lot of resources to bypass the security of the Tor network. In other words, a lot of funding is provided by the United States to the Tor project at the same time for both the development and exploitation of security. This is interesting because Tor is not only available to the US government, it is free and easily available to people all over the world. Government support is thought to have different political and strategic reasons, and the Tor independent organization is working to improve its funding base by taking these criticisms into account. Nevertheless, considering that &quot;<strong>U.S. Department of State Bureau of Democracy, Human Rights, and Labor</strong>&quot; is the main supporting institution, it is claimed that the aid is not malicious, it is aimed at human rights. If you&#39;re curious, you can browse the Tor project&#39;s website for more sponsorship information.</p>
+<p>The name Tor comes from the expression &quot; <strong>T</strong>he <strong>O</strong>nion <strong>R</strong>outer&quot; , which describes the multi-layered encryption and routing to ensure privacy. <p><img src="../img/docs/2/1.jpg" class="responsive"></p> Since Tor project was multi-layered, this structure was likened to the <strong>onion</strong>. So the name &quot;<strong>onion</strong>&quot; comes from here.</p>
+<p>Tor&#39;s main goal is to distort our footprints on the internet, allowing us to access the internet anonymously and uncensored.</p>
+<p><img src="../img/docs/2/2.jpg" class="responsive"></p>
+<h3 id="how-does-tor-work-">How Does Tor Work ?</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/piMP0pgXNjQ" allowfullscreen></iframe>
+</div>
+<p>Tor is basically based on the obfuscation principle. In order to better understand the working structure and to see what kind of system we actually rely on, let&#39;s start by talking about the general working structure.</p>
+<p>For the process of anonymizing the user, <strong>3 of approximately <a class="d-inline-block mb-0 text-danger" href="https://metrics.torproject.org/bubbles.html">6500 volunteer</a> servers</strong> are selected randomly.<p><img src="../img/docs/2/3.jpg" class="responsive"></p> These selected servers are called nodes. While connected to the Tor network, data packets are encrypted and transmitted through these three nodes to the target server. The server&#39;s response packet is encrypted in the same way and transmitted to the user, over three nodes. In this way, all traffic between the website and you is anonymized. <p><img src="../img/docs/2/4.gif" class="responsive"></p>Quite generally, this is the way the Tor network works. However, let&#39;s continue to explain as it will make us more secure to know in a little more detail how our anonymity is provided through this structure.</p>
+<p>In example scenario, let&#39;s visit <a class="d-inline-block mb-0 text-danger" href="http://wikipedia.org/">wikipedia.org</a> via Tor and explain all the process steps that take place during our visit one by one.</p>
+<ul>
+<li>Firstly, for use the Tor network, i opened Tor Browser, and typed the address i want to go to.</li>
+<li>Tor first <strong>selects 3 random nodes</strong> from <strong>around 6500 active Tor servers</strong>. Tor servers work on a voluntary basis and in the selection of voluntary servers, servers that can provide high bandwidth and remain open for a long time are preferred. In other words, the number of these servers, which are currently around 6500, may change over time. And the list of all servers is publicly published.</li>
+<li>After the node points are selected randomly, my request packet is encrypted in <strong>3 layers</strong>. The request package here is the package that states i want to go to &quot;<a class="d-inline-block mb-0 text-danger" href="http://wikipedia.org/">wikipedia.org</a>&quot;.</li>
+<li>The first of the encrypted layers is decrypt by the key in the starting node, and the decrypted layer only gives the information of the next node. Thus, the first node knows to which node it will forward the request packet.</li>
+<li>Likewise, the middle node decrypt on the second layer with its own key. In this way, it learns which node to redirect the packet to and redirects it to.</li>
+<li>The last encrypted layer in the packet reaching the exit node is also decrypted and which server this packet should be transmitted to is learned by the last node and the packet is transmitted to the relevant server.</li>
+<li>In response to the packet reaching the server, the response packet of the server follows the same route and reaches the user, namely the client.</li>
+<li>In addition, in order to ensure the anonymity of users in long-term use, the selected nodes are changed randomly every 10 minutes by default, except for the first node. In addition, users have the opportunity to manually change the nodes randomly whenever they want.</li>
+</ul>
+<p><img src="../img/docs/2/5.gif" class="responsive"></p>
+<p>This much information is enough for now, as going into much deeper and technical issues will not make you safer on the Tor network. This is how the Tor network generally works. We will be talking about this working structure in more detail in the following sections. If you are curious about the technical and scientific details behind the Tor network, there are many articles on this subject, you can easily access this detailed information on the <a class="d-inline-block mb-0 text-danger" href="https://2019.www.torproject.org/docs/documentation.html.en">Tor official website</a> or if you do a short internet search. However, you can be sure that in this course I will talk about everything you need to know about anonymity and privacy.</p>
+<h3 id="what-makes-the-tor-network-secure-">What Makes the Tor Network Secure?</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tLj5iqcsdbw" allowfullscreen></iframe>
+</div>
+<p>In structure of used by TOR, only the first node knows the real identity of the user. The exit node only knows to which server it should forward the packet. Thus, the first node doesn&#39;t know to which exit node the packet is sent to, while the last node doesn&#39;t know from whom the packet. Since the task of the middle node is only to transfer between the first node and the exit node, it cannot know the sender of the packet and which web server the packet will reach. In this way, anonymous communication between the client and the server is provided.</p>
+<p>You can see the situation more clearly by looking at this table.</p>
+
+<h3 id="entry-node">Entry Node</h3>
+<p><strong>Know:</strong> The real IP address of the user</p>
+<p><strong>Unknown:</strong> Which web server the package will eventually reach.</p>
+<h3 id="middle-node">Middle Node</h3>
+<p><strong>Know:</strong> Address of the entry and exit node</p>
+<p><strong>Unknown:</strong> From whom the packet came from (the user&#39;s real ip address) and to which web server the package will eventually reach.</p>
+<h3 id="exit-node">Exit Node</h3>
+<p><strong>Know:</strong> Which web server the package will eventually reach.</p>
+<p><strong>Unknown:</strong> From whom the packet came from (the user&#39;s real ip address)</p>
+<p><img src="../img/docs/2/6.jpg" class="responsive"></p>
+<p>However, the structure used by the Tor is not that perfect in the real world. Now let&#39;s talk about the weaknesses of the Tor network and the solutions to these weaknesses.</p>
+<h3 id="fundamental-weakness-1">Fundamental Weakness - 1</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FXtUHv5D6HY" allowfullscreen></iframe>
+</div>
+<p>First of all, since the list of node servers you can connect to through Tor is published publicly, any authority(government, internet service provider, network administrator, etc. etcetera) can easily restrict your access to the Tor network by blocking each of these servers.</p>
+<p><img src="../img/docs/2/7.jpg" class="responsive"></p>
+<p>As a solution to this situation, Tor provides bridge connections. With the bridge connection provided to you before accessing the Tor network, you can bypass existing restricts and gain unlimited access to the Tor network.<p><img src="../img/docs/2/8.jpg" class="responsive"></p> Moreover, since all these bridge addresses are kept confidential, it is prevented from blocking all of them in possible situations.</p>
+<p>But, if it TOR can keep bridge connections private, why doesn&#39;t it keep the list of node servers private?</p>
+<p>Essentially, there is no point in trying to keep the server information private. Because anyone who owns one of the volunteer servers can obtain and publish the list by running a client. Since all servers are located on the common Tor circuit, it is not difficult for any server to reach the list of other servers. In other words, due to the working structure of the Tor network, it is very easy to get information about which servers on the network are active and which servers are inactive. So keeping the server list private is pointless.</p>
+<h3 id="fundamental-weakness-2">Fundamental Weakness - 2</h3>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eWLp8yFXZ-g" allowfullscreen></iframe>
+</div>
+<p>When transferring your packet to the entry node and when your packet reaching the destination server from the exit node, your privacy can be breached by those who listen or control the entry and exit nodes.</p>
+<p>If observers are only observing between you and the entry node, in other words, listening to the your network, they can only see that you are connecting to the Tor network. In some cases, even this may cause you to be under a deeper follow-up by becoming a suspect.</p>
+<p><img src="../img/docs/2/9.jpg" class="responsive"></p>
+<p>On the other hand, if they are listening to both your connection with the entry node and the connection between the exit node and the server with greater effort, by looking at the correlation between the time of sending your packet and the time of the packet reaching the server, they can conclude that you are interacting with this server and deepen the tracking.</p>
+<p><img src="../img/docs/2/10.jpg" class="responsive"></p>
+<p>Although it is low probability that this situation will occur, it may violate your security when it does. And this weakness is an unacceptable when we speak of true privacy and anonymity.</p>
+<p>At this point, it is a must to use &quot;<strong>VPN</strong>&quot; in addition to Tor and to prefer &quot;<strong>HTTPS</strong>&quot; web addresses with &quot;<strong>SSL/TLS</strong>&quot; certificate. We will deal with these issues one by one in the course, but let&#39;s try to explain briefly for now.</p>
+<p>If you use VPN before accessing the Tor network, observers will not be able to see that you are accessing the Tor network, as they will only see your VPN connection. This usage is called Tor over VPN.</p>
+<p><img src="../img/docs/2/11.jpg" class="responsive"></p>
+<p>Also, communicating only with servers with SSL certificates will encrypt the communication between the server and you, keeping sensitive information away from observers.</p>
+<p><img src="../img/docs/2/12.jpg" class="responsive"></p>
+<h3 id="fundamental-weakness-3">Fundamental Weakness - 3</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8jOUtN7-bcQ" allowfullscreen></iframe>
+</div>
+<p>Another point of risk is that the servers used as nodes and transferring your packages are provided by volunteers around the world. It is not surprising that among these volunteers there are various intelligence agencies and individuals or organizations intending to monitor Tor. In particular, the requirement that the preferred servers have high bandwidth and long active working time are conditions that are not easy for every volunteer to provide for free. Moreover, the possibility of dealing with copyrights and various lawsuits due to the traffic generated through their own servers makes people question the interests of people who endure such a trouble many times.</p>
+<p><img src="../img/docs/2/13.jpg" class="responsive"></p>
+<p>When this is the case, you don&#39;t know which node to trust. However, the probability of this insecurity by the tor community is considered very low. Considering that there are about 6500 nodes on the Tor network and the server selection is made on randomness, and it serves many users at the same time, it is considered low probability to make a point-by-point traffic analysis. However, probably this is a very innocent expectations. Because we do not know the limit and potential of the resources in the hands of an intelligence agency or any formation that has a high motivation to follow you, this danger always seems to be present. There are even some successful <a class="d-inline-block mb-0 text-danger" href="https://github.com/Attacks-on-Tor/Attacks-on-Tor#readme">attacks on the Tor network itself.</a></p>
+<p>Even so; since any observer is expected to be able to check both entry and exit nodes for tangible evidence, it is highly unlikely that the entry and exit node of three randomly selected servers belong to the same observer. Moreover, since Tor changes the middle and exit nodes every 10 minutes by keeping the entry node constant, it significantly reduces the probability that both the entry and exit node are being managed by the same observer.</p>
+<p><img src="../img/docs/2/14.gif" class="responsive"></p>
+<p>In addition, as a result of <a class="d-inline-block mb-0 text-danger" href="https://github.com/Attacks-on-Tor/Attacks-on-Tor#readme">attacks on the Tor network</a>; it is the general expert opinion that it is more precise to expect target people to make mistakes that will reveal their privacy rather than focusing on the imperfect structure of the Tor network.</p>
+<p>In short, it is not easy to achieve anonymity. <strong>Tor never guarantees 100% anonymity either.</strong> But in retrospect, even well-funded sophisticated attacks on Tor have not yielded definitive useful results.</p>
+<p>Documents published by Edward Snowden also report that &quot;NSA&quot;, has &quot;major&quot; problems in monitoring the Tor network.<p><img src="../img/docs/2/15.jpg" class="responsive"></p> However, <strong>Tor can never guarantee 100% anonymity</strong>, as we do not know the potential power of today&#39;s organizations and the potentially newly developed attack techniques. As proof of this, 0day vulnerabilities found on Tor in the recent past can be cited. 0day vulnerabilities refer to vulnerabilities that have not been noticed or even if noticed, vulnerabilities that have not yet been patched. Although there are many published and closed vulnerabilities, it is thought that there are many vulnerabilities that have not yet been closed and are predicted to be actively used by organizations such as intelligence services. These vulnerabilities are often critical vulnerabilities of the type that will expose your real IP address.</p>
+<p>However, as far as we know, there are two most common types of methods that compromise the Tor network&#39;s privacy rather than technical attacks.</p>
+<ul>
+<li>Malicious exit nodes</li>
+<li>Timing analysis</li>
+</ul>
+<h3 id="malicious-exit-nodes">Malicious Exit Nodes</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ed-e7-vDJt8" allowfullscreen></iframe>
+</div>
+<p>As we mentioned earlier, the servers of the Tor network are based on volunteering, and we never know who these volunteers really are and for what purpose they are providing this server resource. As a result of various tests, it is estimated that approximately 2.5% of the exit nodes of the Tor network are provided by malicious people. Although regular tests are carried out to detect malicious servers and removed them from the Tor network, it is a fact that this method does not provide a definitive solution.</p>
+<h3 id="what-can-malicious-exit-nodes-do-">What can malicious exit nodes do?</h3>
+<ul>
+<li>Since it is the exit node, it does not know directly who you are, but it knows which web address you want to reach. However, you run the risk of revealing your real identity, directly or indirectly, through your communication or internet behavior.</li>
+<li>In addition to spying on your data, malicious Tor exit nodes can often perform a <strong>man-in-the-middle</strong> attack <strong>(MitM) that</strong> redirects your page request to a fake website</li>
+</ul>
+<p><img src="../img/docs/2/16.jpg" class="responsive"></p>
+<h3 id="how-can-we-be-protected-">How can we be protected?</h3>
+<ul>
+<li>As long as you connect to secure SSL encrypted (<a class="d-inline-block mb-0 text-success"><strong>https..</strong></a>) websites, your data stays safe and cannot be compromised by a fake exit node.</li>
+</ul>
+<p><img src="../img/docs/2/17.jpg" class="responsive"></p>
+<ul>
+<li>Being aware of the man-in-the-middle attacks, it is important for your security to check the address you want to go to and be aware of the sensitivity of the information you enter. Since you are using the Tor network, you should always be in control of all your steps, without thinking that you are completely safe.</li>
+</ul>
+<h3 id="timing-analysis-attacks">Timing Analysis Attacks</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4cZCeBhfl2k" allowfullscreen></iframe>
+</div>
+<p>These are the attacks that risk the most security.</p>
+<p>Essentially, timing attacks are attacks that can be created with a wide variety of scenarios, the ones that most security risk. The main purpose of timing attacks is to determine the correlation between the activity performed and the time when the person accesses the Tor network.</p>
+<p><img src="../img/docs/2/18.jpg" class="responsive"></p>
+<p>For example, in 2013, Harvard student made bomb threats to avoid exam. This bomb-hoaxing was sent over the Tor network, after a certain period of time, using an e-mail service that self-destructed. However, despite all these security measures, the person making the hoaxing was caught. The main reason for his catch was that he sent the e-mail over the campus Wi-Fi network. The research team checked to see if anyone had accessed Tor through the local wireless networks. After all, there was only one person using the Tor network on campus, and it turned out that it was that person who sent the message. This is a fairly simple mistake of carelessness, but basically, the real identities of people can be revealed through such time matches.</p>
+<p>Apart from this, if the observer has a high number of servers on the Tor network, it can identify the persons by analyzing the incoming and outgoing data in a similar way. However, as there will be a large number of Tor users online at any given moment, such a correlation would require extensive and long-term statistical analysis, making it almost impossible to get definitive conclusions. However, of course we have no way of knowing the potential resource available to the various organizations that have virtually unlimited power and truly global reach. So in theory, if the observer allocates enough resources for the target, there is always a possibility that the target might violate the anonymity and privacy.</p>
+<p>In addition, apart from these two attacks, many inattentions that a person can make can directly reveal the identity of the person. However, if technical attacks other than inattentions are of interest to you, you can also take a look at the known <a class="d-inline-block mb-0 text-danger" href="https://github.com/Attacks-on-Tor/Attacks-on-Tor#readme">attacks on the Tor</a> network from the list in this lecture resource.</p>
+<p>Types of attacks from the past to the present.</p>
+<p><strong>Source:</strong> <a class="d-inline-block mb-0 text-danger" href="https://github.com/Attacks-on-Tor/Attacks-on-Tor">Attacks on Tor</a></p>
+<p>If you are not going to participate as a developer to actively contribute to the Tor project, the details of technical attacks are unnecessary for a normal user. Tor developers are responsible for resolving technical attacks. However, you can of course take a look at the attacks on the list in order to have general information.</p>
+<h3 id="how-can-we-be-protected-">How can we be protected?</h3>
+<p>While there is no direct way to protect yourself from timing attacks, keeping your personal activities under control can provide security. You need to act by taking all these parameters into account, including the internet you are connected to, your location, the computer you use, and whatever can be associated with you in real life. In short, you should be able to keep all the factors required for operational security called &quot;<strong>OPSEC</strong>&quot; under your control at all times.</p>
+<h3 id="tor-hidden-services">Tor Hidden Services</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/azLS22rq9pA" allowfullscreen></iframe>
+</div>
+<p>Let&#39;s start by explaining a few concepts. You&#39;ve probably heard of the concepts of &quot;deep web&quot;, &quot;dark web&quot; and &quot;surface web&quot; before. The iceberg example is often used because it represents concepts well.</p>
+<h3 id="surface-web">Surface Web</h3>
+<p><img src="../img/docs/2/19.jpg" class="responsive"></p>
+<p>As in the iceberg analogy, it represents the surface of the web network, that is, a very small fraction of the overall web network indexed by search engines. For example, when you search using a search engine such as Google, all the web content you encounter only represents those in the surface web area. Websites classified in the surface web area are websites that have accepted to be able to be indexing by standard search engines such as Google. And they represent a very small fraction of the network when considering the entire web.</p>
+<h3 id="deep-web">Deep Web</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AfF0MIrZrMg" allowfullscreen></iframe>
+</div>
+
+<p>Unlike the Surface web, it represents all kinds of web content that search engines do not index.<p><img src="../img/docs/2/20.jpg" class="responsive"></p> It usually represents the overall web area where search engines find it not worth indexing, or where websites directly block indexing to escape search engines.<p><img src="../img/docs/2/21.jpg" class="responsive"></p> To access websites in this area, the web address must be entered directly. And the conditions required for the connection must be met.</p>
+<p>For example, the admin panels of the sites are generally excluded from the indexing of search engines for security reasons. Thus, while the admin panel of the site cannot be found through the search engine, if we know its exact address, we can access this admin panel. In other words, the deep web area, which is excluded from the scope of standard search engines for this and many other reasons, is called &quot;<strong>deep web&quot;.</strong></p>
+<h3 id="dark-web">Dark Web</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cBdAmXPVOKA" allowfullscreen></iframe>
+</div>
+
+<p>Similar to the deep web, the dark web, on the other hand, is outside the scope of search engines on the surface web, and since it is located on the Tor network, it is only accessible over Tor.</p>
+<p><img src="../img/docs/2/22.jpg" class="responsive"></p><p><img src="../img/docs/2/23.jpg" class="responsive"></p>
+<p>Dark web is the general name of web addresses with <strong>onion</strong> domains kept on the Tor network and where privacy is at the forefront.<p><img src="../img/docs/2/24.jpg" class="responsive"></p> Websites with this onion domain can be created free of charge by anyone and published anonymously. The fact that websites can be created anonymously and free of charge has made this web network more vulnerable to abuse. Since this web network is mostly used for malicious purposes, it has been named as &quot;<strong>Dark Web</strong>&quot;. In addition, websites that are in the dark web, that is, can only be accessed through the Tor network, are also called &quot;Tor hidden services&quot; or, more modernly, &quot;onion services&quot;.</p>
+<p>If we need to talk briefly about onion services;</p>
+<p>With the Onion service, you can publish a website over the Tor network without any third-party service provider for &quot;hosting&quot; or &quot;domain&quot; service. Moreover, because the entire connection is routed through the Tor network and encrypted, you can remain anonymous while publishing over the onion service.<p><img src="../img/docs/2/25.jpg" class="responsive"></p> In short, this is the working structure of onion services. We will be talking about these services again in a part of the course.</p>
+<p>With the explanations we have made so far, we have briefly mentioned many concepts that you need to know in general. In addition, we will be talking about these issues in more detail in the course, as the time comes.</p>
+<p>Now let&#39;s continue with the explanations by considering the various tools and methods by which you can access the Tor network.</p>
+<h3 id="accessing-the-tor-network">Accessing the Tor Network</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Lx47nG6JPAQ" allowfullscreen></iframe>
+</div>
+<p>Although there are more than one method to use the Tor network, we will consider several methods that are considered to be the safest in this course and we will perform the descriptions through these methods.</p>
+<p><img src="../img/docs/2/26.jpg" class="responsive"></p>
+<p>We will consider 3 different ways to securely access the Tor network, these are;</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Methods</th>
+      <th scope="col">Security Degree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="color:#9c27b0" scope="row">Tor Browser</th>
+      <td>It is a simple but not very safe method.</td>
+    </tr>
+    <tr>
+      <th style="color:#673ab7"scope="row">Tails OS</th>
+      <td>It is a good method in most situations.</td>
+    </tr>
+    <tr>
+      <th style="color:#2196f3" scope="row">Whonix via Qubes OS</th>
+      <td colspan="2">It is the method considered the safest.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In the rest of the course, we will explain all these methods one by one. While explaining the methods, we will be talking about the advantages and disadvantages of the methods. In this way, you will know which method will meet your needs more accurately when you need it.</p>
+<h3 id="is-it-legal-to-use-the-tor-network-" class="text-danger">Is It Legal to Use the Tor Network?</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/awFruMahJe0" allowfullscreen></iframe>
+</div>
+<p>Also, finally, let&#39;s clarify whether it is legal to use the Tor network.</p>
+<p><img src="../img/docs/2/27.jpg" class="responsive"></p>
+<p>In fact, Whether it is legitimate depends entirely on what purpose you are using the Tor network. So in most cases you wouldn&#39;t be accused just for connecting to the Tor network. Just being connected to the Tor network is not a direct crime. However, <strong>you are responsible for all your activities on the tor network. If you have criminal activities and you are caught, it is quite natural that you will be accused.</strong> In summary, any non-criminal activity won&#39;t pose a legal problem as it is carried out over the Tor network. If you have criminal activities, nothing can protect you. In this course your aim is to gain the basic awareness that will enable you to protect your personal data. No one can promise you one hundred percent anonymity. If it does, it is not true. You will already see the limits of anonymity and privacy in this course.</p>
+<p>In the next section, we will continue with the explanations Tor Browser, which is first use method.</p>
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 1. Section</strong>
+          <h3 class="mb-0">What is Privacy & Anonymity ?</h3>
+          <a href="./1.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 3. Section <i class="fa fa-chevron-right"></i></strong>
+          <h3 style="text-align:right;" class="mb-0">Tor Browser</h3>
+          <a href="./3.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro-udemy-free.png" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Free Anonymity & Privacy Course on Udemy</h3></strong>
+                <p class="card-text">You can click on this card to enroll for the free udemy course of the tutorial series here. Please note that this course is introductory training only. This free course will provide you with an introductory knowledge of anonymity and privacy.</p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/draft/4221902/" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro-youtube.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Free Anonymity & Privacy Course on Youtube</h3></strong>
+                <p class="card-text">You can click on this card to access the free youtube playlist of the tutorial series. Please note that this tutorial series is introductory training only. This free tutorial series will only provide you with an introductory knowledge of anonymity and privacy.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.youtube.com/playlist?list=PL-lGItuwUSeC7fouP446Znc1tw2tevGoA" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>

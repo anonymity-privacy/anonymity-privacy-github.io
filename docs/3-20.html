@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 3. Section: Tor Browser Verification and Installation (MacOS)
+
+</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">3. Section 20. Lecture</strong>
+          <h3 class="mb-0">Tor Browser Verification and Installation (MacOS)
+
+</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article class="markdown-body entry-content" itemprop="text">
+			  <h1 id="tor-browser-setup-linux-">Tor Browser Setup (Linux)</h1>
+			  <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BiuOoJtvOIs" allowfullscreen></iframe>
+</div>
+<p>Before the installation process, you should perform signature check to verify the content of the setup file you downloaded. You can use the official guide to follow the verification steps easily. I added this verification guide link in this lecture sources.</p>
+<p>You don&#39;t need to install an external tool for file verification as it is in other operating systems. Most Linux distributions usually come with a GPG tool. If there is no verification tool in the Linux system you are using, you can reach me from the question and answer section.</p>
+<p>In order to verify the signature, you first need to import the developer key. If you are using Linux but have never opened the command line before, you can open it by searching for &quot; <strong>command line</strong> &quot; or &quot; <strong>terminal</strong> &quot; or by finding it from the list of applications.</p><p><img src="../img/docs/3/32.jpg" class="responsive"></p> <p>After opening your terminal, let&#39;s enter command to get the developer key.</p>
+<p><img src="../img/docs/3/33.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --auto-key-locate nodefault,wkd --locate-keys torBrowser@torproject.org</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div><p>When you enter the command correctly, the developer key is imported as you can see.</p>
+<p>After importing the key successfully, let&#39;s enter command by specifying the locations of the setup and signature files downloaded. Since the files I download are in the downloads folder, I enter command in this way. When entering the command, it is important that you first specify the signature file, that is, follow the command order. When you click the tab key while typing the file names, the name will be completed automatically.</p>
+<p><img src="../img/docs/3/34.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg -verify ~/Downloads/Tor-Browser-linuxXYZ.tar.xz.asc ~/Downloads/Tor-Browser-linuxXYZ.tar.xz</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div><p>And as a result, the output i got matched with the developer key i imported, proving that my file is signed by the Tor developers and has not been modified. If your file was a modified, you wouldn&#39;t be able to get this output as this signature match wouldn&#39;t be provided. In this case, you need to download the setup file and verification key from an alternative download source again and try this verification process again.</p>
+<p>Now that you have verified setup file, you can start using Tor browser by extracting it from the archive file to a location you want. When using the Tor browser on Linux, it comes preinstalled without the need for installation. All you have to do is decide where you want to locate this file. I extract the contents of the archive to my desktop location.</p><p><img src="../img/docs/3/35.jpg" class="responsive"></p> <p>To run my browser, I go to the file location I extracted and double click on its icon.</p><p><img src="../img/docs/3/36.jpg" class="responsive"></p> <p>In the window that opens, I click the &quot;Connect&quot; button to connect the browser to the Tor network.</p>
+<p><img src="../img/docs/3/37.jpg" class="responsive"></p>
+<p>After a short while, the connection is ready and Tor browser is opened without any problems. Thus, we have safely downloaded and installed Tor browser on the Linux system. We will talk about its use in detail in the following lectures.</p>
+<p><img src="../img/docs/3/38.jpg" class="responsive"></p>
+<p>Finally, I would like to point out that it is not have to perform the verification process, but it is an extremely important detail for your security. As there is no difficulty at verification steps, I strongly recommend that you verify before the installation process.</p>
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 19. Lecture</strong>
+          <h3 class="mb-0">Tor Browser Verification and Installation (MacOS)
+
+</h3>
+          <a href="./3-19.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 21. Lecture <i class="fa fa-chevron-right"></i></strong>
+          <h3 class="mb-0">Using Tor Browser
+
+</h3>
+          <a href="./3-21.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 2. Section: How Does Tor Work ?</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">2. Section 3. Lecture</strong>
+          <h3 class="mb-0">How Does Tor Work ?</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article class="markdown-body entry-content" itemprop="text">
+			  <h3 id="how-does-tor-work-">How Does Tor Work ?</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LuhoqPFEF9o" allowfullscreen></iframe>
+</div>
+<p>Tor is basically based on the obfuscation principle. In order to better understand the working structure and to see what kind of system we actually rely on, let&#39;s start by talking about the general working structure.</p>
+<p>For the process of anonymizing the user, <strong>3 of approximately <a class="d-inline-block mb-0 text-danger" href="https://metrics.torproject.org/bubbles.html">6500 volunteer</a> servers</strong> are selected randomly.<p><img src="../img/docs/2/3.jpg" class="responsive"></p> These selected servers are called nodes. While connected to the Tor network, data packets are encrypted and transmitted through these three nodes to the target server. The server&#39;s response packet is encrypted in the same way and transmitted to the user, over three nodes. In this way, all traffic between the website and you is anonymized. <p><img src="../img/docs/2/4.gif" class="responsive"></p>Quite generally, this is the way the Tor network works. However, let&#39;s continue to explain as it will make us more secure to know in a little more detail how our anonymity is provided through this structure.</p>
+<p>In example scenario, let&#39;s visit <a class="d-inline-block mb-0 text-danger" href="http://wikipedia.org/">wikipedia.org</a> via Tor and explain all the process steps that take place during our visit one by one.</p>
+<ul>
+<li>Firstly, for use the Tor network, i opened Tor Browser, and typed the address i want to go to.</li>
+<li>Tor first <strong>selects 3 random nodes</strong> from <strong>around 6500 active Tor servers</strong>. Tor servers work on a voluntary basis and in the selection of voluntary servers, servers that can provide high bandwidth and remain open for a long time are preferred. In other words, the number of these servers, which are currently around 6500, may change over time. And the list of all servers is publicly published.</li>
+<li>After the node points are selected randomly, my request packet is encrypted in <strong>3 layers</strong>. The request package here is the package that states i want to go to &quot;<a class="d-inline-block mb-0 text-danger" href="http://wikipedia.org/">wikipedia.org</a>&quot;.</li>
+<li>The first of the encrypted layers is decrypt by the key in the starting node, and the decrypted layer only gives the information of the next node. Thus, the first node knows to which node it will forward the request packet.</li>
+<li>Likewise, the middle node decrypt on the second layer with its own key. In this way, it learns which node to redirect the packet to and redirects it to.</li>
+<li>The last encrypted layer in the packet reaching the exit node is also decrypted and which server this packet should be transmitted to is learned by the last node and the packet is transmitted to the relevant server.</li>
+<li>In response to the packet reaching the server, the response packet of the server follows the same route and reaches the user, namely the client.</li>
+<li>In addition, in order to ensure the anonymity of users in long-term use, the selected nodes are changed randomly every 10 minutes by default, except for the first node. In addition, users have the opportunity to manually change the nodes randomly whenever they want.</li>
+</ul>
+<p><img src="../img/docs/2/5.gif" class="responsive"></p>
+<p>This much information is enough for now, as going into much deeper and technical issues will not make you safer on the Tor network. This is how the Tor network generally works. We will be talking about this working structure in more detail in the following sections. If you are curious about the technical and scientific details behind the Tor network, there are many articles on this subject, you can easily access this detailed information on the <a class="d-inline-block mb-0 text-danger" href="https://2019.www.torproject.org/docs/documentation.html.en">Tor official website</a> or if you do a short internet search. However, you can be sure that in this course I will talk about everything you need to know about anonymity and privacy.</p>
+
+
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 2. Lecture</strong>
+          <h3 class="mb-0">What is TOR ?</h3>
+          <a href="./2-2.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 4. Lecture <i class="fa fa-chevron-right"></i></strong>
+          <h3 class="mb-0">What Makes the Tor Network Secure?
+</h3>
+          <a href="./2-4.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>

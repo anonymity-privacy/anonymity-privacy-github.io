@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 3. Section: TOR over VPN
+</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">3. Section 23. Lecture</strong>
+          <h3 class="mb-0">TOR over VPN
+</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article class="markdown-body entry-content" itemprop="text">
+			 <h1 id="tor-over-vpn">TOR over VPN</h1>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bnde2V4x4Gk" allowfullscreen></iframe>
+</div>
+<p>When you want to access the internet through the Tor network, the traffic between you and the entry node assigned to you can be monitored by malicious observers. <p><img src="../img/docs/3/42.jpg" class="responsive"></p> If the website you are visiting to doesn&#39;t have SSL or TLS encryption layer, ie the encrypted connection that appears as &quot;https&quot;, the traffic between the website and you won&#39;t be encrypted, so it can be monitored by observers. <p><img src="../img/docs/3/43.jpg" class="responsive"></p> If the website you communicate with has an valid SSL or TLS certificate, the observer can&#39;t know about the content, even if it monitors the connection between them, observer can only see that you have access to the Tor network. The SSL and TLS certificates mentioned here both encrypt the traffic between you and the website. <p><img src="../img/docs/3/44.jpg" class="responsive"></p> Some websites use SSL while others use TLS certificate. For the rest of the course I will be referring to both certificates by simply saying SSL.</p>
+<p>When you connect to the Tor network over VPN, your internet access appears as like that.</p>
+<p><img src="../img/docs/3/46.jpg" class="responsive"></p>
+<p>Your Computer <strong>-&gt;</strong> VPN <strong>-&gt;</strong> Tor <strong>-&gt;</strong> Internet</p>
+<p><strong>Advantages of connecting to the Tor network over VPN;</strong></p>
+<ul>
+<li>Your internet service provider or any observer on your network can&#39;t see that you are connecting to the Tor network. It only sees that you have established a VPN connection. Since VPN use is much more common than the Tor network, this creates relatively little doubt about your internet traffic.</li>
+<p><img src="../img/docs/3/47.jpg" class="responsive"></p>
+<li>Because the communication between you and the Entry/Guard node will be encrypted by the VPN, observers or malicious Entry/Guard nodes on the network cannot breach your privacy.</li>
+<p><img src="../img/docs/3/48.jpg" class="responsive"></p>
+<li>Since the Tor entry node will see the ip address of the VPN service you are using instead of your real ip address, you will hide your real ip address even if the entry node is malicious. However, for real anonymity at this point, your VPN service shouldn&#39;t be keep logs. Otherwise, your anonymity may be violated by associating your real ip address with the ip address of the VPN service.</li>
+<p><img src="../img/docs/3/49.jpg" class="responsive"></p>
+</ul>
+<p>In addition to these advantageous features, there <strong>are also disadvantages</strong> we experience <strong>when</strong> connecting to the Tor network over VPN <strong>;</strong></p>
+<ul>
+<li>Your VPN service knows your real IP address. If it keeps logs or is an unreliable service for any reason, it can reveal your true identity. At this point, it is very important to choose reliable service.</li>
+<p><img src="../img/docs/3/50.jpg" class="responsive"></p>
+<li>If the web address you are visiting to doesn&#39;t contain SSL protection, malicious exit nodes may read by the website response to you. Although it isn&#39;t associated with your real ip address, there is a possibility that your data, ie your privacy, may be compromised by the exit node. <p><img src="../img/docs/3/51.jpg" class="responsive"></p> Because VPN only encrypts the data sent from you to the entry node, the data sent by the website cannot be encrypted by the VPN while reaching the exit node. <p><img src="../img/docs/3/52.jpg" class="responsive"></p> In such a case, if the exit node is malicious, it may violate your privacy by reading the response sent from the website. <p><img src="../img/docs/3/53.jpg" class="responsive"></p> However, this applies to any site that doesn&#39;t have an SSL certificate, i.e. doesn&#39;t offer a secure connection that appears as https. In other words, it isn&#39;t a disadvantage of using VPN. I have just added it to the disadvantage list to indicate that visiting non-HTTPS addresses with only VPN use can also compromise your privacy. The only solution to this situation is to visit websites that use an SSL certificate. <p><img src="../img/docs/3/54.jpg" class="responsive"></p> If the website you want to visit doesn&#39;t have SSL encryption, remember that the content you write and read can be easily monitored by those who listen to your network.</li>
+
+<li>Another disadvantage is that in addition to the slowness of the Tor network, using a VPN will slow the internet speed more. However, considering the security it brings, this is not a big loss.</li>
+</ul>
+<h3 id="things-to-consider-when-choosing-a-vpn-">Things to consider when choosing a VPN;</h3>
+<p>The priorities you should be aware of when using the Tor network over VPN; It is to prefer VPN services that provide uninterrupted service, never keep logs and can make payments anonymously. If you ask why these are important;</p>
+<ul>
+<li>If your VPN connection drops when you connect to the tor network over VPN, observers on your network can learn that you are connected to the tor network. In addition, the entry node, which is the first node, can learn your real ip address during the connection drops.</li>
+<p><img src="../img/docs/3/55.jpg" class="responsive"></p>
+<li>If the VPN service keep logs, all the security and privacy measures you take will be in vain, as the origin point of all the activities you do will be known by your VPN service. Logging means that your entire internet record is associated with your identity. In such a case, it doesn&#39;t make much sense to be using the Tor network.</li>
+<p><img src="../img/docs/3/56.jpg" class="responsive"></p>
+<li>When paying for a VPN service, it is very important to pay in cryptocurrency to protect your holistic anonymity. Thus, when the ip address of the VPN service standing in front of your real ip address is searched, it cannot be directly associated with your real identity. In the course of the training, we will also be talking about how cryptocurrencies give us anonymity.</li>
+<p><img src="../img/docs/3/57.jpg" class="responsive"></p>
+</ul>
+<p>At this point, you have to decide for yourself which is the most ideal VPN service. It can be difficult to determine which VPN service is trusted. So you may want to check out this VPN comparison chart by That One Privacy Site, which analyzes almost 200 VPN providers based on their jurisdictions and policies.</p>
+<p><a class="d-inline-block mb-0 text-danger" href="https://www.safetydetectives.com/best-vpns/">https://www.safetydetectives.com/best-vpns/</a></p>
+<p><img src="../img/docs/3/58.jpg" class="responsive"></p>
+<p>For example, in the period I reviewed this list, express VPN was chosen as the most ideal VPN service.</p>
+<p>In addition to being on the list, according to my personal experience, I can recommend you to use &quot;Express VPN&quot;. My recommendation reason; It has been proven by independent organizations that it doesn&#39;t keep logs and prevents the leak of your real IP address by disconnecting the internet as soon as the VPN connection is lost. You can use the crypto money &quot;bitcoin&quot; for payment, and you can also get a refund if you are not satisfied by trying the service for a month.</p>
+<p><img src="../img/docs/3/59.jpg" class="responsive"></p>
+<p>Although this service is ideal in my opinion, you can of course take a look at alternative services and make your own decision. In addition, what I explain here isn&#39;t an advertisement for the service. It is a service that I have specified to share my personal opinion for suggestion purposes. I have created a special discount link for this course so that only those who want to use it can use it at a discount. I have added the link to the resources for this lecture. You can try it if you want to use it.</p>
+<p>After choosing the right VPN service, all you have to do to use Tor over VPN is to start the VPN service of your choice before connecting to the Tor network. To connect to the VPN service, you need to download and install the application of your preferred service on your system. After the installation process, you can make the VPN connection very easily. <p><img src="../img/docs/3/60.jpg" class="responsive"></p> For example, after establishing the VPN connection of the Express VPN service, when you connect to the Tor network through the Tor Browser application, you can ensure secure communication, as anyone who observes your internet and Tor network can only see that you are establishing a VPN connection.</p>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 22. Lecture</strong>
+          <h3 class="mb-0">Bridge Connection
+</h3>
+          <a href="./3-22.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 24. Lecture <i class="fa fa-chevron-right"></i></strong>
+          <h3 class="mb-0">VPN over TOR
+
+</h3>
+          <a href="./3-24.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>

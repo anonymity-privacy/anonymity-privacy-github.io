@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 3. Section: Tor Browser</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/prism.css">
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn" data-toggle="canvas" data-target="#bs-canvas-left" aria-expanded="false" aria-controls="bs-canvas-left"><i class="fa fa-align-justify fa-lg"></i></a><a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn" data-toggle="canvas" data-target="#bs-canvas-left" aria-expanded="false" aria-controls="bs-canvas-left"><i class="fa fa-align-justify fa-lg"></i></a><a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+<div id="bs-canvas-left" class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed bg-kanvas h-100" >
+	<header class="bs-canvas-header p-3 bg-baslık">
+		
+    	<h4 align="center" >Lectures<button type="button" class="bs-canvas-close close" aria-label="Close" aria-expanded="true"><span aria-hidden="true" >×</span></button></h4>
+        
+    </header>
+    <div class="bs-canvas-content px-3">
+    	
+    	<div align="center" class="list-group my-2 ">
+			<a href="#what-is-tor-browser-" class="list-group-item list-group-item-action" >What is Tor Browser ?</a>
+			<a href="#downloading-tor-browser" class="list-group-item list-group-item-action" >Downloading Tor Browser</a>
+			<a href="#downloading-from-the-tor-official-website" class="list-group-item list-group-item-action" >Downloading from the Tor Official Website</a>
+          	<a href="#downloading-on-github" class="list-group-item list-group-item-action" >Downloading on Github</a>
+          	<a href="#download-via-email" class="list-group-item list-group-item-action" >Download via Email</a>
+			<a href="#verifying-the-installation-file" class="list-group-item list-group-item-action" >Verifying the Installation File</a>
+			<a href="#tor-browser-verification-and-installation-windows-" class="list-group-item list-group-item-action" >Tor Browser Verification and Installation (Windows)</a>
+          	<a href="#tor-browser-verification-and-installation-macos-" class="list-group-item list-group-item-action" >Tor Browser Verification and Installation (MacOS)</a>
+          	<a href="#tor-browser-setup-linux-" class="list-group-item list-group-item-action" >Tor Browser Setup (Linux)</a>
+			<a href="#using-tor-browser" class="list-group-item list-group-item-action" >Using Tor Browser</a>
+			<a href="#providing-bridge-connection" class="list-group-item list-group-item-action" >Providing Bridge Connection</a>
+			<a href="#tor-over-vpn" class="list-group-item list-group-item-action" >TOR over VPN</a>
+			<a href="#vpn-over-tor" class="list-group-item list-group-item-action" >VPN over TOR</a>
+			<a href="#tor-browser-settings" class="list-group-item list-group-item-action" >Tor Browser Settings</a>
+			<a href="#android-tor-browser-installation" class="list-group-item list-group-item-action" >Android Tor Browser Installation</a>
+			<a href="#about-ios-tor-browser" class="list-group-item list-group-item-action" >About iOS Tor Browser</a>
+			<a href="#summary" class="list-group-item list-group-item-action" >Summary</a>
+			<hr>
+			<a href="#feedback" class="list-group-item list-group-item-action">Give Feedback</a>
+			
+          	
+        </div>
+		
+		
+    </div>    
+</div>
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a class="d-inline-block mb-0 text-danger" href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">3. Section</strong>
+          <h3 class="mb-0">Tor Browser</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article id="makale" class="markdown-body entry-content" itemprop="text">
+<h1 id="what-is-tor-browser-">What is Tor Browser ?</h1>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/15yDP-3nXng" allowfullscreen></iframe>
+</div>
+<h3 id="tor-browser">Tor Browser</h3>
+<p>Tor Browser is basically a tool that helps us surf the web just like Chrome, Opera, Firefox or any other web browser. However, unlike standard browsers, it routes all internet traffic through the Tor network. In this way, bypassing all restrictions, it enables us to securely access &quot;Surface Web&quot; and hidden services called &quot;Dark Web&quot; through the Tor network.</p>
+<p>Tor Browser was created by customizing the Firefox browser for the Tor project. It is a practical solution for connecting to the Tor network via various operating systems. Although there is no officially supported browser for iOS yet, there are browsers with official support for Android, Windows, Linux and Mac.</p>
+<p>Unlike regular browsers, Tor browsers come with various restrictions and security measures, apart from routing all internet traffic through the Tor network. So it is fully <strong>optimized for security and privacy.</strong></p>
+<p>Before going into the details of browser usage, you should first learn where and how to download the Tor browser.</p>
+<h1 id="downloading-tor-browser">Downloading Tor Browser</h1>
+<p>You have multiple alternatives to download the Tor browser. All these alternatives exist so that you can securely download the Tor browser over any network where access is restricted. Let&#39;s take a look at the download alternatives in order.</p>
+<h3 id="downloading-from-the-tor-official-website">Downloading from the Tor Official Website</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3ODmCD0VM4M" allowfullscreen></iframe>
+</div>
+<p>The most basic and common method used to download the Tor browser is to download the version suitable for your system from its official website.</p>
+<p>To download browser, firstly visit to the <a class="d-inline-block mb-0 text-danger" href="http://torproject.org">torproject.org</a> . If you want, you can choose the language of the website as your native language and understand what is written more clearly.</p> 
+<p><img src="../img/docs/3/1.jpg" class="responsive"></p>
+<p>Click the &quot;<strong>Download Tor Browser</strong>&quot; button to see the download options.</p>
+<p><img src="../img/docs/3/2.jpg" class="responsive"></p>
+<p>As you can see on the page that opens, there are multiple download options. Click on &quot;Download in another language or platform&quot; for more options .</p>
+<p><img src="../img/docs/3/3.jpg" class="responsive"></p>
+<p>As you can see here, there are download links with multiple language options for multi-platforms. From here, just click on the link to download the appropriate version for your operating system. At this point, my suggestion to you is that you prefer the English installation package, which has a much more general use, rather than packages in other languages that you know or can be associated with you. In this way, you can make your real identity much more uncertain with a much wider browser version. You can still choose the language pack you want if you think you will have difficulty or if you prefer for use where your anonymity is not so important. Your native language can be preferred to use at least until you get used to the browser. Just click on the link to download the version suitable for the operating system you will install Tor Browser on. For example, since I will install it on a Windows 64 sixty four bit system, I click the link here.</p>
+<p><img src="../img/docs/3/4.jpg" class="responsive"></p>
+<p>And also, make sure to save the &quot; <strong>signature</strong> &quot; file of the installation file you downloaded, by right clicking on the link that &quot; <strong>sig</strong> &quot; and clicking &quot; <strong>save link as</strong> &quot;.</p>
+<p><img src="../img/docs/3/5.jpg" class="responsive"></p>
+<p>You will be using this <strong>signature</strong> file during the installation phase to test the safety of the setup file.</p>
+<p>We discussed first download alternative. However, despite being the first, this is actually most prevented alternative. The country you are in or the internet service provider you use may have blocked the Tor project&#39;s websites. So, you may not have been able to access the Tor website while you were following this lecture. In this case, you can either use the second alternative download source or you can download from the website by using VPN. As a matter of fact, since I had trouble accessing the website while preparing this guide, I was able to show the processes by accessing the website through a simple VPN application installed in my browser.</p><p><img src="../img/docs/3/6.jpg" class="responsive"></p> <p>So if you wish, only for download you can use simple VPN extensions that can be installed on browsers or you can try the second download method. Also by the way; I would like you to know that such free VPN services running on the browser are not secure and their keeps log your personal data. Apart from this, I recommend that you read the terms of use before using such free services and find out what information they collect about you.</p>
+<p>Leaving aside the use of VPN for now, let&#39;s consider second alternative source.</p>
+<h3 id="downloading-on-github">Downloading on Github</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YstafVCBTTY" allowfullscreen></iframe>
+</div>
+<p>In this alternative, which provides a much more uninterrupted access compared to the first, it is possible to access download files on Github.</p>
+<p>Firstly, you should visit to the Tor project&#39;s Github source; <a class="d-inline-block mb-0 text-danger" href="https://github.com/TheTorProject/getTorBrowser"></a><a class="d-inline-block mb-0 text-danger" href="https://github.com/TheTorProject/getTorBrowser">https://github.com/TheTorProject/getTorBrowser</a></p>
+<p>Click on the &quot; <strong><a class="d-inline-block mb-0 text-danger" href="https://github.com/TheTorProject/gettorbrowser/releases">release</a></strong> &quot; tab to download the sources published on GitHub.</p><p><img src="../img/docs/3/7.jpg" class="responsive"></p> <p>As you can see, all downloadable files are here. Here you can download the setup file suitable for the operating system you are using. Also, please don&#39;t forget to download the signature file with &quot; <strong>.asc</strong> &quot; extension along with the setup file you downloaded.</p>
+<p><img src="../img/docs/3/8.jpg" class="responsive"></p>
+<p>As I said before, you will be using this signature file during the installation phase to test the safety of the downloaded file.</p>
+<p>If the Github platform is blocked in your country or somehow you have lost access to these Tor installation files on Github, you can download the files using VPN or the next alternative method.</p>
+<h3 id="download-via-email">Download via Email</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dwkeE2nmKYM" allowfullscreen></iframe>
+</div>
+<p>If in any way you can&#39;t <a  class="d-inline-block mb-0 text-danger" href="mailto:gettor@torproject.org">access</a> Tor browser download sources with the previous methods, just <a  class="d-inline-block mb-0 text-danger" href="mailto:gettor@torproject.org">send an</a> e-mail to <a class="d-inline-block mb-0 text-danger" href="mailto:gettor@torproject.org">gettor@torproject.org</a> .</p>
+<p>For example, if I want to download the English version of tor browser for windows, I just need to send the &quot;windows en&quot; message. You can write &quot;osx&quot; or &quot;linux&quot; instead of windows and also specify the abbreviation of your preferred language pack.</p> <p><img src="../img/docs/3/9.jpg" class="responsive"></p><p>For example, if you want Tor Browser for Macos in Arabic you can send &quot;osx ar&quot; message.</p>
+<p>As you can see, I soon received the download links in response, including many alternative ways.</p><p><img src="../img/docs/3/10.jpg" class="responsive"></p> <p>Now all I have to do is download the setup file and signature file from here. Depending on the density, the response message may be slightly delayed for you. So even if you don&#39;t get an immediate response, it&#39;s okay.</p>
+<p>All these methods and addresses that I have explained so far may change over time for different reasons. In such a case, you should check out the <a class="d-inline-block mb-0 text-danger" href="https://tb-manual.torproject.org/tr/downloading/">download guide</a> on the Tor official website. You can easily read many documents and guides as it already has your native language support. In addition, you can ask me questions about the course at any time from the question-answer field at the point where you have problems.</p>
+<p>There may be some of you wondering, or even critic, why I have just explained a simple download at such length. The reason for this situation is in the structure of the Tor project. Since the Tor project has always struggled with censorship by nature, it has always had to create alternative ways. I have explained it this lengthy because I think it will be useful for you to know alternative ways to access sources in all situations.</p>
+<p>Ultimately, you learned how you can obtain the files you need to download for the installation process, including alternative ways. Before installing the browser, you need to verify the setup file.</p>
+<p>But why do we need to verify setup file? Were the sources we used not already the official sources of the tor project?</p>
+<p>Let&#39;s answer this question in the next lecture.</p>
+<h1 id="verifying-the-installation-file">Verifying the Installation File</h1>
+<p>Regardless of where you downloaded the installation files, the contents of the installation files may have been changed by the attackers before or during the download process.</p>
+<p>For example, a file you downloaded from the Tor project&#39;s website may have been replaced by a malicious version by the attackers.</p><p><img src="../img/docs/3/11.jpg" class="responsive"></p> <p>Although such a possibility seems unlikely to many, I would like to remind you that in 2016, Linux Mint servers were hacked and installation image files were replaced with malicious files, and many people downloaded and installed malicious versions of Mint. <a class="d-inline-block mb-0 text-danger" href="https://blog.linuxmint.com/?p=2994">You can browse</a> for the source .</p>
+<p>In addition, even if the direct download source is not hacked, at any time during your download process, the file may have been changed with the malicious version by the attackers who control your internet connection.</p>
+<p><img src="../img/docs/3/12.jpg" class="responsive"></p>
+<p>The surest solution to this and similar scenarios is to verify the downloaded file.</p>
+<p>For verification, you need to compare the digital signature published by the developers of the Tor project with the signature of your current installation file.</p>
+<p>Digital signatures are unique signatures only assigned by developers to the respective version of the program. Since even the slightest change in the content of the installation file will cause this signature to change, you can easily test whether the file has been changed or not through the signature.</p>
+<p><img src="../img/docs/3/13.jpg" class="responsive"></p>
+<p>When you downloaded the setup file, remember I mentioned that you need to download signature files with &quot;<strong>.asc</strong>&quot; extension in addition to the setup file. These &quot; <strong>.asc</strong> &quot; file are actually signature file created with the <strong>PGP</strong> encryption protocol. This file contain a uniquely generated key. Thanks to this file, we can test whether the content of the program has been changed or not. If you haven&#39;t downloaded this signature file, go to the download source and download the signature file of the Tor Browser version you downloaded. <strong>To avoid problems during the verification phase, make sure you download the signature file of the exact tor browser version you downloaded earlier. Otherwise, the verification will fail.</strong></p>
+<p>Don&#39;t worry if the terms I use seem unfamiliar and incomprehensible to you. When you come to the &quot;Encryption&quot; section in the rest of the course, i will be talking more about this terms separately. For now, you only need to focus on verification process. When this process is quite simple, you shouldn&#39;t have any problems if you follow the guide carefully.</p>
+<p>After obtaining the setup file and signature file, you need to use a separate tool to test the setup file. Although this tool differs according to the operating system used, the functions and uses of them are basically the same.</p>
+<p>For example, we will use the <strong>Gpg4win</strong> tool to verify the signature on <strong>Windows</strong> . <strong>On MacOS</strong> , we will verify the signature with the tool called <strong>GPG Suite</strong> . Finally, we will test signature on <strong>Linux</strong> using a verification tool <strong>that</strong> is <strong>already installed</strong> .</p>
+<p><img src="../img/docs/3/14.jpg" class="responsive"></p>
+<p>We will be handling the verification and setup processes one by one specifically for the operating system. So you can directly throw the verification and installation video for the operating system you are not using. We will already be discussing how you can implement the same process in each of them on the current operating system.</p>
+<p>Without further ado, let&#39;s start by discussing how you can verify and install the Tor Browser installation file on the &quot;Windows&quot; system.</p>
+<h1 id="tor-browser-verification-and-installation-windows-">Tor Browser Verification and Installation (Windows)</h1>
+<p>Before the installation process, you should perform signature check to verify the content of the setup file you downloaded. You can use the official guide to follow the verification steps easily. I added this verification guide link in this lecture sources.</p>
+<p>Since you will use the &quot; <strong>Gpg4win</strong> &quot; tool as i mentioned before to check the signature on Windows, you need to get this tool first.</p>
+<p>To download the &quot; <strong>gpg4win</strong> &quot; tool, open the download page by visiting <a class="d-inline-block mb-0 text-danger" href="https://gpg4win.org/"></a><a class="d-inline-block mb-0 text-danger" href="https://gpg4win.org">https://gpg4win.org</a> . If you want to donate, you can specify the amount you want here. If you are not going to donate, select the &quot;0&quot; amount and click the download button.</p>
+<p><img src="../img/docs/3/15.jpg" class="responsive"></p>
+<p>Now, you can install the tool quickly after the download. During the setup process, you can complete the steps without changing the default settings. It asks to reboot the system when the setup process is complete. You don&#39;t have to reboot, so finish the installation process by selecting the reboot later option. That&#39;s how easy <strong>Gpg4win</strong> tool is to install.</p>
+<p>In order to verify the signature, you first need to import the developer key. For this, let&#39;s run the <strong>cmd</strong> tool, which is the command prompt on Windows, and enter the command.</p>
+<p><img src="../img/docs/3/16.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --auto-key-locate nodefault,wkd --locate-keys torBrowser@torproject.org</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	<p><img src="../img/docs/3/17.jpg" class="responsive"></p>
+	<p>When you enter the command correctly, the developer key is imported as you can see.</p>
+<p>After this process, let&#39;s enter command by specifying the locations of the setup and signature files downloaded. Since the files I download are in the downloads folder, I enter command in this way. When entering the command, it is important that you first specify the signature file, that is, follow the command order. When you click the tab key while typing the file names, the name will be completed automatically.</p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --verify Downloads\\TorBrowser-install-XYZ_en-US.exe.asc Downloads\\TorBrowser-install-XYZ_en-US.exe</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	<p><img src="../img/docs/3/18.jpg" class="responsive"></p>
+	<p>And as a result, the output i got matched with the developer key i imported, proving that my file is signed by the Tor developers and has not been modified. If your file was a modified file, you wouldn&#39;t be able to get this output as this signature match wouldn&#39;t be provided. In this case, you need to download the setup file and verification key from an alternative download source again and try this verification process again.</p>
+<p>Now that we&#39;ve verified setup file, we can start the Tor Browser installation by double-clicking the setup file.</p>
+<p>You can select the language to be used during the installation process here. I continue unchanged.</p><p><img src="../img/docs/3/19.jpg" class="responsive"></p> <p>Unlike many programs, when the Tor browser is installed, it does not spread throughout the system. It maintains all files in a single file location. We can choose where to location the file from the window that opens.</p><p><img src="../img/docs/3/20.jpg" class="responsive"></p> <p>I am not changing the default file location. If you wish, you can specify a different location. The installation process is completed in a short time. If you want to create a shortcut to the start menu and the desktop, you can click finish without unchecking.</p><p><img src="../img/docs/3/21.jpg" class="responsive"></p><p> In the window that opens, I click the &quot;Connect&quot; button to connect the browser to the Tor network.</p><p><img src="../img/docs/3/22.jpg" class="responsive"></p></p> After a short while, the connection is ready and TOR browser is opened without any problems.</p>
+<p><img src="../img/docs/3/23.jpg" class="responsive"></p>
+<p>Also, when you check, you can confirm that Tor browser is installed in the folder named &quot; <strong>Tor Browser</strong> &quot; on the desktop . This is how we safely downloaded and installed Tor browser. We will discuss its use in detail in the next lectures.</p>
+<p>Finally, I would like to point out that it isn&#39;t have to perform the verification process, but it is an extremely important detail for your security. As there is no difficulty at verification steps, I strongly recommend that you verify before the installation process.</p>
+<p>In the next lecture, we will perform the same verification and installation process, this time for the Mac operating system. So if you are not using macOS, you can skip the next lecture directly.</p>
+<h1 id="tor-browser-verification-and-installation-macos-">Tor Browser Verification and Installation (MacOS)</h1>
+<p>Before the installation process, you should perform signature check to verify the content of the setup file you downloaded. You can use the official guide to follow the verification steps easily. I added this verification guide link in this lecture sources.</p>
+<p>You will use the <a class="d-inline-block mb-0 text-danger" href="https://www.gpgtools.org/">GPGSuite</a> tool to verify the setup file before installing . To download tool, go to <a class="d-inline-block mb-0 text-danger" href="https://gpgtools.org/">https://gpgtools.org/</a> and click the &quot; <strong>Download</strong> &quot; button.</p>
+<p><img src="../img/docs/3/24.jpg" class="responsive"></p>
+<p>After the download, you can start the installation by double-clicking the setup file and click &quot;<strong>Install</strong>&quot; in the window that opens. Let&#39;s complete the installation process in a short time by giving all the necessary approvals for the installation.</p>
+<p><img src="../img/docs/3/25.jpg" class="responsive"></p>
+<p>Now that you have installed the verification tool, you can verify the signature by opening the terminal. If you don&#39;t know how to open the terminal, you can access it by searching &quot; <strong>Terminal</strong> &quot; from the applications section or the search bar .</p>
+<p><img src="../img/docs/3/26.jpg" class="responsive"></p>
+<p>In order to verify the signature, you first need to import the developer key. Enter the command to import the developer key.</p>
+<p><img src="../img/docs/3/27.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --auto-key-locate nodefault,wkd --locate-keys torBrowser@torproject.org</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div><p>When you enter the command correctly, the developer key is imported as you can see.</p>
+<p>After importing the key successfully, let&#39;s enter command by specifying the locations of the setup and signature files downloaded. Since the files I download are in the downloads folder, I enter command in this way. When entering the command, it is important that you first specify the signature file, that is, follow the command order. When you click the tab key while typing the file names, the name will be completed automatically.</p>
+<p><img src="../img/docs/3/28.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg -verify ~/Downloads/TorBrowser-XYZ.dmg.asc ~/Downloads/TorBrowser-XYZ.dmg</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div><p>And as a result, the output i got matched with the developer key i imported, proving that my file is signed by the Tor developers and has not been modified. If your file was a modified file, you wouldn&#39;t be able to get this output as this signature match wouldn&#39;t be provided. In this case, you need to download the setup file and verification key from an alternative download source again and try this verification process again.</p>
+<p>Now that you&#39;ve verified your file, you can start the Tor browser installation by double-clicking the setup file.</p>
+<p>You can drag and drop the Tor application icon onto the &quot;Applications&quot; icon to install Tor Browser on your computer.</p>
+<p><img src="../img/docs/3/29.jpg" class="responsive"></p>
+<p>When the move process is finished, the Tor browser is ready to use. You can run it smoothly by clicking the browser icon from the applications section. In the window that opens, you should click the &quot;Connect&quot; button to connect the browser to the Tor network.</p><p><img src="../img/docs/3/30.jpg" class="responsive"></p><p>After a short while, the connection is ready and Tor browser is opened without any problems. Thus, you have installed the Tor browser very easily. We will talk about its use in detail in the following lectures.</p>
+<p><img src="../img/docs/3/31.jpg" class="responsive"></p>
+<p>Finally, I would like to point out that it is not have to perform the verification process, but it is an extremely important detail for your security. As there is no difficulty at verification steps, I strongly recommend that you verify before the installation process.</p>
+<p>In the next lecture, we will perform the same verification and installation process, this time for the Linux operating system. If you are not using Linux you can skip the next lecture directly.</p>
+<h1 id="tor-browser-setup-linux-">Tor Browser Setup (Linux)</h1>
+<p>Before the installation process, you should perform signature check to verify the content of the setup file you downloaded. You can use the official guide to follow the verification steps easily. I added this verification guide link in this lecture sources.</p>
+<p>You don&#39;t need to install an external tool for file verification as it is in other operating systems. Most Linux distributions usually come with a GPG tool. If there is no verification tool in the Linux system you are using, you can reach me from the question and answer section.</p>
+<p>In order to verify the signature, you first need to import the developer key. If you are using Linux but have never opened the command line before, you can open it by searching for &quot; <strong>command line</strong> &quot; or &quot; <strong>terminal</strong> &quot; or by finding it from the list of applications.</p><p><img src="../img/docs/3/32.jpg" class="responsive"></p> <p>After opening your terminal, let&#39;s enter command to get the developer key.</p>
+<p><img src="../img/docs/3/33.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --auto-key-locate nodefault,wkd --locate-keys torBrowser@torproject.org</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div><p>When you enter the command correctly, the developer key is imported as you can see.</p>
+<p>After importing the key successfully, let&#39;s enter command by specifying the locations of the setup and signature files downloaded. Since the files I download are in the downloads folder, I enter command in this way. When entering the command, it is important that you first specify the signature file, that is, follow the command order. When you click the tab key while typing the file names, the name will be completed automatically.</p>
+<p><img src="../img/docs/3/34.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg -verify ~/Downloads/Tor-Browser-linuxXYZ.tar.xz.asc ~/Downloads/Tor-Browser-linuxXYZ.tar.xz</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div><p>And as a result, the output i got matched with the developer key i imported, proving that my file is signed by the Tor developers and has not been modified. If your file was a modified, you wouldn&#39;t be able to get this output as this signature match wouldn&#39;t be provided. In this case, you need to download the setup file and verification key from an alternative download source again and try this verification process again.</p>
+<p>Now that you have verified setup file, you can start using Tor browser by extracting it from the archive file to a location you want. When using the Tor browser on Linux, it comes preinstalled without the need for installation. All you have to do is decide where you want to locate this file. I extract the contents of the archive to my desktop location.</p><p><img src="../img/docs/3/35.jpg" class="responsive"></p> <p>To run my browser, I go to the file location I extracted and double click on its icon.</p><p><img src="../img/docs/3/36.jpg" class="responsive"></p> <p>In the window that opens, I click the &quot;Connect&quot; button to connect the browser to the Tor network.</p>
+<p><img src="../img/docs/3/37.jpg" class="responsive"></p>
+<p>After a short while, the connection is ready and Tor browser is opened without any problems. Thus, we have safely downloaded and installed Tor browser on the Linux system. We will talk about its use in detail in the following lectures.</p>
+<p><img src="../img/docs/3/38.jpg" class="responsive"></p>
+<p>Finally, I would like to point out that it is not have to perform the verification process, but it is an extremely important detail for your security. As there is no difficulty at verification steps, I strongly recommend that you verify before the installation process.</p>
+<h1 id="using-tor-browser">Using Tor Browser</h1>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eFyAz4cOL_w" allowfullscreen></iframe>
+</div>
+<p>When i talk about the structure of the Tor network, i have listed the methods you can use the Tor. If you remember, i mentioned that using Tor Browser is not the best way among these methods. The reason why using Tor Browser is not the best method is because the operating system we use the browser is not strictly security-oriented. So, in fact, we will be using the Tor browser in other methods that we consider safer in the continuation of the course. Since the operating systems that we will use the Tor browser for in the methods we consider safe are fully configured for privacy, they will provide a much more secure environment than any other operating system.</p>
+<p>So actually using the Tor browser on Android, Windows, MacOS, or a standard Linux distribution is not a completely inefficient way, but it is not the best way for security and privacy. The vulnerabilities that may occur in operating systems or software on the operating system may cause the anonymity and privacy features provided by the Tor browser to become meaningless. In short, using the Tor browser on standard operating systems is practical, but alone is insufficient for security. Without further ado, let&#39;s continue the explanation by talking about the use of the Tor browser and its various settings.</p>
+<p>Although the installation and verification processes differ slightly for different operating systems, the use of Tor Browser after it is installed is very similar for all systems. In other words, all system users can easily follow the instructions here. I will perform the lectures on Windows for now, you can follow it on any operating system you want.</p>
+<p>I double click on the application to open the Tor browser.</p>
+<p><img src="../img/docs/3/38-1.jpg" class="responsive"></p>
+<p>As you can see, a simple browser interface that doesn&#39;t look much different from the standard Firefox browser welcomed us. Now let&#39;s check our connection by going to &quot;<a class="d-inline-block mb-0 text-danger" href="http://check.torproject.org">check.torproject.org</a>&quot; to test whether we are properly connected to the Tor network.</p>
+<p><img src="../img/docs/3/39.jpg" class="responsive"></p>
+<p>On the page that opens, we can confirm that our connection is routed through the Tor network as it should. At this point, if you have not encountered this confirmation statement, you may have an internet connection where the Tor network is blocked.</p><p><img src="../img/docs/3/40.jpg" class="responsive"></p> <p>In such cases, you can choose to use Tor bridge connection or VPN to bypass the block. We will talk about VPN usage in the following lectures, for now, let&#39;s continue with the explanations by talking about the Tor bridge connection.</p><p><img src="../img/docs/3/41.jpg" class="responsive"></p> <p>In addition, even if you can access the Tor network smoothly while you follow this lecture, it will be useful to learn how to use the bridge connection in case you encounter a potential block. So, even if your Tor connection is fine, please continue course without leaving the curriculum layout.</p>
+<h1 id="providing-bridge-connection">Providing Bridge Connection</h1>
+<p>When i talked about the working structure of the Tor network at the beginning of the course, i mentioned that the list of servers in the Tor network is publicly published and therefore Tor servers can be easily blocked.</p><p><img src="../img/docs/3/41-1.jpg" class="responsive"></p> <p>Authorities such as the government, your service provider, or your network administrator can easily blocking the Tor network through this publicly published list of servers.</p><p><img src="../img/docs/3/41-2.jpg" class="responsive"></p> <p>It is possible that you will often encounter situations where the Tor network is blocked because it is easy to block.</p>
+
+<p>In such cases, you can use the bridge connections provided by the Tor project to overcome the obstacle.</p><p><img src="../img/docs/3/41-3.jpg" class="responsive"></p> <p>Since the list of bridge routers is kept confidential, all bridge connections cannot be blocked at once, so even if the servers are blocked, access to the Tor network can be achieved over the bridge connection.</p>
+<p><img src="../img/docs/3/41-4.jpg" class="responsive"></p>
+
+<p>To establish the bridge connection, you need to visit the <a class="d-inline-block mb-0 text-danger" href="https://bridges.torproject.org/options">https://bridges.torproject.org/options</a></p>
+<p><img src="../img/docs/3/41-5.jpg" class="responsive"></p>
+<p>After reaching the website, select the <strong>obfs4</strong> option and click the &quot;get bridges&quot; button. Now lastly enter the security code.</p>
+<p><img src="../img/docs/3/41-6.jpg" class="responsive"></p>
+<p>After entering the security code, you can see the address information required for the bridge connection. You can copied this addresses from here.</p>
+<p><img src="../img/docs/3/41-7.jpg" class="responsive"></p>
+<p>If tor is blocked on the internet you are connected to, this website is probably also blocked. If you haven&#39;t been able to obtain bridge addresses in this way, you can access this website using any VPN service. You can also get these addresses from within the Tor browser as an alternative to the VPN option. When we talking about Tor Browser settings, you will see how you can get bridge addresses from within the Tor browser.</p>
+<p>Now let&#39;s click the three-line icon on the right side of browser to open the menu to make the necessary settings for the bridge. Click on &quot; <strong>Options</strong> &quot; from the menu that opens. After the options window opens, click on the &quot; <strong>Tor</strong> &quot; tab on the left. Here we will make the necessary settings for the bridge connection. To configure the bridge, first, let&#39;s checking the &quot;use bridge&quot; box.</p>
+<p><img src="../img/docs/3/41-8.jpg" class="responsive"></p>
+<p>If you have bridge addresses, you can click on the &quot; Provide a bridge &quot; option and enter the bridge address in this field.</p>
+<p><img src="../img/docs/3/41-9.jpg" class="responsive"></p>
+<p>Thus, the Tor network will be provided over the bridge connection you have specified. To test whether a bridge connection is available, let&#39;s go to &quot;<a class="d-inline-block mb-0 text-danger" href="http://check.torproject.org">check.torproject.org</a>&quot; again and check the nodes used to connect to this address.<p><img src="../img/docs/3/41-10.jpg" class="responsive"></p> As you can see, the first node is the bridge. This means that you were able to successfully establish the bridge connection. In addition, if you don&#39;t have addresses for the bridge connection, you can also use the &quot;Select a built-in bridge&quot; or &quot;Request a bridge from <a class="d-inline-block mb-0 text-danger" href="http://torproject.org">torproject.org</a>&quot; options from the bridges section.</p>
+<p>If you use the &quot;Select a built-in bridge&quot; option, the bridges built into the tor browser are used. If you select the obfs4 option here, a built-in bridge will be used.<p><img src="../img/docs/3/41-11.jpg" class="responsive"></p> In addition, the bridge address can be defined automatically with the &quot;request a new bridge&quot; option.</p>
+<p><img src="../img/docs/3/41-12.jpg" class="responsive"></p>
+<p>You can easily overcome situations where the Tor network is censored by using all these methods.</p>
+<p><img src="../img/docs/3/41-13.jpg" class="responsive"></p>
+<p>If you are using the bridge connection and still have problems with the access, you are probably dealing with a censorship mechanism that detects that you have accessed the Tor network by thoroughly analyzing your network traffic. As a simple solution to this situation, you may prefer to use the Tor network over VPN. Moreover, using VPN will may provide you with much more security measures as well as bypassing the censorship.</p>
+<p>If you don&#39;t have access blocked to the Tor network, using a bridge connection won&#39;t make sense because won&#39;t provide you with extra security. Please note that the purpose of the bridge is only to bypass censorship, not to provide extra security. However, in some cases, you may want to use a VPN, even if you don&#39;t have access block to the Tor network. To better understand why, let&#39;s explain the effects of VPN usage on the Tor network by handling Tor connection over VPN.</p>
+<h1 id="tor-over-vpn">TOR over VPN</h1>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ns1I9D6Qr-I" allowfullscreen></iframe>
+</div>
+<p>When you want to access the internet through the Tor network, the traffic between you and the entry node assigned to you can be monitored by malicious observers. <p><img src="../img/docs/3/42.jpg" class="responsive"></p> If the website you are visiting to doesn&#39;t have SSL or TLS encryption layer, ie the encrypted connection that appears as &quot;https&quot;, the traffic between the website and you won&#39;t be encrypted, so it can be monitored by observers. <p><img src="../img/docs/3/43.jpg" class="responsive"></p> If the website you communicate with has an valid SSL or TLS certificate, the observer can&#39;t know about the content, even if it monitors the connection between them, observer can only see that you have access to the Tor network. The SSL and TLS certificates mentioned here both encrypt the traffic between you and the website. <p><img src="../img/docs/3/44.jpg" class="responsive"></p> Some websites use SSL while others use TLS certificate. For the rest of the course I will be referring to both certificates by simply saying SSL.</p>
+<p>When you connect to the Tor network over VPN, your internet access appears as like that.</p>
+<p><img src="../img/docs/3/46.jpg" class="responsive"></p>
+<p>Your Computer <strong>-&gt;</strong> VPN <strong>-&gt;</strong> Tor <strong>-&gt;</strong> Internet</p>
+<p><strong>Advantages of connecting to the Tor network over VPN;</strong></p>
+<ul>
+<li>Your internet service provider or any observer on your network can&#39;t see that you are connecting to the Tor network. It only sees that you have established a VPN connection. Since VPN use is much more common than the Tor network, this creates relatively little doubt about your internet traffic.</li>
+<p><img src="../img/docs/3/47.jpg" class="responsive"></p>
+<li>Because the communication between you and the Entry/Guard node will be encrypted by the VPN, observers or malicious Entry/Guard nodes on the network cannot breach your privacy.</li>
+<p><img src="../img/docs/3/48.jpg" class="responsive"></p>
+<li>Since the Tor entry node will see the ip address of the VPN service you are using instead of your real ip address, you will hide your real ip address even if the entry node is malicious. However, for real anonymity at this point, your VPN service shouldn&#39;t be keep logs. Otherwise, your anonymity may be violated by associating your real ip address with the ip address of the VPN service.</li>
+<p><img src="../img/docs/3/49.jpg" class="responsive"></p>
+</ul>
+<p>In addition to these advantageous features, there <strong>are also disadvantages</strong> we experience <strong>when</strong> connecting to the Tor network over VPN <strong>;</strong></p>
+<ul>
+<li>Your VPN service knows your real IP address. If it keeps logs or is an unreliable service for any reason, it can reveal your true identity. At this point, it is very important to choose reliable service.</li>
+<p><img src="../img/docs/3/50.jpg" class="responsive"></p>
+<li>If the web address you are visiting to doesn&#39;t contain SSL protection, malicious exit nodes may read by the website response to you. Although it isn&#39;t associated with your real ip address, there is a possibility that your data, ie your privacy, may be compromised by the exit node. <p><img src="../img/docs/3/51.jpg" class="responsive"></p> Because VPN only encrypts the data sent from you to the entry node, the data sent by the website cannot be encrypted by the VPN while reaching the exit node. <p><img src="../img/docs/3/52.jpg" class="responsive"></p> In such a case, if the exit node is malicious, it may violate your privacy by reading the response sent from the website. <p><img src="../img/docs/3/53.jpg" class="responsive"></p> However, this applies to any site that doesn&#39;t have an SSL certificate, i.e. doesn&#39;t offer a secure connection that appears as https. In other words, it isn&#39;t a disadvantage of using VPN. I have just added it to the disadvantage list to indicate that visiting non-HTTPS addresses with only VPN use can also compromise your privacy. The only solution to this situation is to visit websites that use an SSL certificate. <p><img src="../img/docs/3/54.jpg" class="responsive"></p> If the website you want to visit doesn&#39;t have SSL encryption, remember that the content you write and read can be easily monitored by those who listen to your network.</li>
+
+<li>Another disadvantage is that in addition to the slowness of the Tor network, using a VPN will slow the internet speed more. However, considering the security it brings, this is not a big loss.</li>
+</ul>
+<h3 id="things-to-consider-when-choosing-a-vpn-">Things to consider when choosing a VPN;</h3>
+<p>The priorities you should be aware of when using the Tor network over VPN; It is to prefer VPN services that provide uninterrupted service, never keep logs and can make payments anonymously. If you ask why these are important;</p>
+<ul>
+<li>If your VPN connection drops when you connect to the tor network over VPN, observers on your network can learn that you are connected to the tor network. In addition, the entry node, which is the first node, can learn your real ip address during the connection drops.</li>
+<p><img src="../img/docs/3/55.jpg" class="responsive"></p>
+<li>If the VPN service keep logs, all the security and privacy measures you take will be in vain, as the origin point of all the activities you do will be known by your VPN service. Logging means that your entire internet record is associated with your identity. In such a case, it doesn&#39;t make much sense to be using the Tor network.</li>
+<p><img src="../img/docs/3/56.jpg" class="responsive"></p>
+<li>When paying for a VPN service, it is very important to pay in cryptocurrency to protect your holistic anonymity. Thus, when the ip address of the VPN service standing in front of your real ip address is searched, it cannot be directly associated with your real identity. In the course of the training, we will also be talking about how cryptocurrencies give us anonymity.</li>
+<p><img src="../img/docs/3/57.jpg" class="responsive"></p>
+</ul>
+<p>At this point, you have to decide for yourself which is the most ideal VPN service. It can be difficult to determine which VPN service is trusted. So you may want to check out this VPN comparison chart by That One Privacy Site, which analyzes almost 200 VPN providers based on their jurisdictions and policies.</p>
+<p><a class="d-inline-block mb-0 text-danger" href="https://www.safetydetectives.com/best-vpns/">https://www.safetydetectives.com/best-vpns/</a></p>
+<p><img src="../img/docs/3/58.jpg" class="responsive"></p>
+<p>For example, in the period I reviewed this list, express VPN was chosen as the most ideal VPN service.</p>
+<p>In addition to being on the list, according to my personal experience, I can recommend you to use &quot;Express VPN&quot;. My recommendation reason; It has been proven by independent organizations that it doesn&#39;t keep logs and prevents the leak of your real IP address by disconnecting the internet as soon as the VPN connection is lost. You can use the crypto money &quot;bitcoin&quot; for payment, and you can also get a refund if you are not satisfied by trying the service for a month.</p>
+<p><img src="../img/docs/3/59.jpg" class="responsive"></p>
+<p>Although this service is ideal in my opinion, you can of course take a look at alternative services and make your own decision. In addition, what I explain here isn&#39;t an advertisement for the service. It is a service that I have specified to share my personal opinion for suggestion purposes. I have created a special discount link for this course so that only those who want to use it can use it at a discount. I have added the link to the resources for this lecture. You can try it if you want to use it.</p>
+<p>After choosing the right VPN service, all you have to do to use Tor over VPN is to start the VPN service of your choice before connecting to the Tor network. To connect to the VPN service, you need to download and install the application of your preferred service on your system. After the installation process, you can make the VPN connection very easily. <p><img src="../img/docs/3/60.jpg" class="responsive"></p> For example, after establishing the VPN connection of the Express VPN service, when you connect to the Tor network through the Tor Browser application, you can ensure secure communication, as anyone who observes your internet and Tor network can only see that you are establishing a VPN connection.</p>
+<h1 id="vpn-over-tor">VPN over TOR</h1>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xFCbbSA7XTQ" allowfullscreen></iframe>
+</div>
+<p>In this connection type, in contrast to the connection type i mentioned in the previous lecture, your internet access looks like the this.</p>
+<p><img src="../img/docs/3/61.jpg" class="responsive"></p>
+<p>Your Computer <strong>-&gt;</strong> Tor <strong>-&gt;</strong> VPN <strong>-&gt;</strong> Internet</p>
+<p>At the time of preparing this course, there were only 2 VPN service providers, &quot;AirVPN&quot; and &quot;BolehVPN&quot;, that provided this service.</p>
+<p><img src="../img/docs/3/62.jpg" class="responsive"></p>
+<p>If we briefly touch on the advantages and disadvantages of using VPN over Tor;</p>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Since you are connected to the VPN server via Tor, the VPN provider cannot see your real IP address, only the Tor exit node ip address.<p><img src="../img/docs/3/63.jpg" class="responsive"></p> Assuming that you pay for the VPN service anonymously with secure cryptocurrency, your anonymity will not be compromised even if the VPN service keeps a log.</li>
+<p><img src="../img/docs/3/64.jpg" class="responsive"></p>
+<li>You can use it to visit websites that block visitors from the Tor network. Some websites block users connected to the tor network for security reasons.<p><img src="../img/docs/3/65.jpg" class="responsive"></p> When you use VPN over TOR, your VPN  connection will appear, so you can overcome this obstacle. However, it would make more sense to use only VPN to visit such websites.</li>
+<p><img src="../img/docs/3/66.jpg" class="responsive"></p>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>Your internet service provider and anyone observing your network can see that you are connecting to the Tor network.</li>
+<p><img src="../img/docs/3/67.jpg" class="responsive"></p>
+<li>Your VPN provider can see your internet traffic. However, because the traffic comes through the Tor network, it can never be directly associated with you if it does not know your real identity indirectly.</li>
+<p><img src="../img/docs/3/68.jpg" class="responsive"></p>
+<li>You cannot access websites with onion services via VPN.</li>
+<p><img src="../img/docs/3/69.jpg" class="responsive"></p>
+<li>The fact that the Tor network connects to a single VPN point can be a disadvantage for the timing attacks i mentioned earlier. However, if you made the payment anonymously, even if information is leaked from the VPN service, it cannot be directly associated with you.</li>
+<p><img src="../img/docs/3/70.jpg" class="responsive"></p>
+<li>It is somewhat more difficult to configure and privacy is more likely to be compromised by incorrect configuration. Configuration settings may vary depending on the service provider used.</li>
+</ul>
+<p>When we consider all these advantages and disadvantages, it can be said that using the second method, &quot;VPN over Tor&quot;, is not a good choice for many people.<p><img src="../img/docs/3/74.jpg" class="responsive"></p> If you are using the right VPN service, the first method &quot;Tor over VPN&quot; connection will meet all your needs. I don&#39;t recommend using the &quot;VPN over Tor&quot; method and will not be covered in the course.<p><img src="../img/docs/3/73.jpg" class="responsive"></p> I just wanted to explain it briefly so that you are aware that such a method also exists.</p>
+<p><img src="../img/docs/3/72.jpg" class="responsive"></p>
+<p>Although Tor alone provides you with very good anonymity, you can decide to use the Tor network over VPN or alone, depending on your needs, considering the advantages and disadvantages of using VPN. For example, if the address you want to connect to has an SSL certificate and you don&#39;t want to hide the information that you are connected to the Tor network from your internet service provider or observers, you don&#39;t have to use a VPN.</p>
+<p><img src="../img/docs/3/71.jpg" class="responsive"></p>
+<p>Yes, you have finally learned to bypass all obstacles and securely connect to the Tor network via the Tor browser. Now let&#39;s talk about the Tor browser settings and why those settings should exist.</p>
+<h1 id="tor-browser-settings">Tor Browser Settings</h1>
+<p>When you visit any website; By clicking the this icon in the search bar of your browser, you can see through which &quot; Tor Circuit &quot; you are connected to the website.<p><img src="../img/docs/3/75.jpg" class="responsive"></p> Also, if the website has SSL certificate, there is the phrase &quot;connection secure&quot; here as you can see.</p>
+<p>First of all, if we start with the certificate audit; For example, I am currently at &quot;<a class="d-inline-block mb-0 text-danger" href="http://check.torproject.org">check.torproject.org</a>&quot; and can view information on whether this website is safe for communication.</p>
+<p><img src="../img/docs/3/76.jpg" class="responsive"></p>
+<p>Also, I can click the &quot;<strong>More information</strong>&quot; button to get more details and to assign specific permissions to the site.</p>
+<p><img src="../img/docs/3/77.jpg" class="responsive"></p>
+<p>As you can see, I have received more detailed information about the certificate of the site.</p>
+<p>Apart from the certificate details, you can set permissions for the current website from the &quot; <strong>Permissions</strong> &quot; tab. In order to change the permissions, you need to uncheck the &quot;use default&quot; option.<p><img src="../img/docs/3/78.jpg" class="responsive"></p> As you can see, you can allow the feature you want and block the ones you want. However, for your security, it would be much better to keep the settings here as default. But of course, you can change these permissions differently from the default, especially for the websites you trust, whenever you need them.</p>
+<p>From the Media tab, you can obtain the information of the materials such as pictures and videos owned by the website and if you wish, you can block these contents.</p>
+<p><img src="../img/docs/3/79.jpg" class="responsive"></p>
+<p>In the General tab, you can obtain general information such as the title and address of the website.</p>
+<p><img src="../img/docs/3/80.jpg" class="responsive"></p>
+<p>I also want to remind you that this feature, the ability to get information about the certificate and manage site permissions, is not only available in the Tor browser. I just wanted to talk about the purpose of use, in case you don&#39;t know or don&#39;t care if you know. Checking such information about the website you are visiting to and managing its permissions is a very good habit in terms of security. Even if you haven&#39;t paid attention to this until now, you have now learned that it is an important detail to pay attention to this part for your privacy.</p>
+<p>You know Tor Circuit gives the information of the servers you are connected to in the Tor network.<p><img src="../img/docs/3/81.jpg" class="responsive"></p>  As you can see, I am currently communicating with &quot;<a class="d-inline-block mb-0 text-danger" href="http://check.torproject.org">check.torproject.org</a>&quot; via this Tor circuit. Except for the first node in this circuit, the middle and exit nodes can be easily changed with the &quot;New Circuit for this Site &quot; button here.<p><img src="../img/docs/3/82.jpg" class="responsive"></p>  In addition, if you do not refresh manually, the circuit will automatically changed itself every 10 minutes except for the entry node.</p>
+<p>But why does the entry node, stays same despite the renewal process?</p>
+<p>This is because the entry node in the circuit, is selected as &quot;Guard&quot;. <strong><p><img src="../img/docs/3/83.jpg" class="responsive"></p>It is a fast and stable node that stays at the same for two to three months, as we have already mentioned, to protect against attacks that could compromise your anonymity.</strong> The entry node usually doesn&#39;t change for two to three months unless there is a server side issue. In exceptional cases, when your security is at stake or the server is not working properly, you can witness it changes automatically in a short time. In short, the fact that the entry node doesn&#39;t change is the most effective security method that can be used now to protect against possible attacks on the Tor network, contrary to the feeling of insecurity it creates in you.</p>
+<p>For more technical details, you can read the <a class="d-inline-block mb-0 text-danger" href="https://www-users.cs.umn.edu/~hoppernj/single_guard.pdf">article published by the</a> University of Minnesota from the link at this lecture resources.</p>
+<p>The permissions section under the Tor Circuit shows the site-specific permissions. Now let&#39;s open &quot;settings&quot; to talk about other settings. I will cover the permissions issue again as i explain the settings in a moment. Now let&#39;s talk about &quot;security level&quot; and &quot;new identify&quot; buttons.</p>
+<p><img src="../img/docs/3/84.jpg" class="responsive"></p>
+<p>The security level button is a shortcut button that shows the security level setting in your browser and directs you to the settings when you want to change it.<p><img src="../img/docs/3/85.jpg" class="responsive"></p> We will talk about these security level settings and details later.</p>
+<p><img src="../img/docs/3/86.jpg" class="responsive"></p>
+<p>The &quot;new identify&quot; button, closes all existing tabs and sessions you have opened on the browser, and restarts the browser by resetting your identity.</p>
+<p>The locations and functions of all these buttons may change with the updates over time. So the browser you are using while following this course may look a little different from mine. However, please note that such changes don&#39;t matter at the point of keep going to education, we are basically talking about what is necessary for safety in this course.</p>
+<p>If the location of the buttons changes, you can find their location with a short lookup. If a new feature is added or existing features change, you can understand their use by reading short feature descriptions. In short, I want to say that you should always read new documents for more features and constantly focus on what you can pay more attention to for your own safety, not limiting yourself to what you have learned in this course. Of course, the more we strive to ensure our security, the more those who want to violate our security will do. For this reason, techniques and security methods will be constantly updated and will change over time. You can only stay safe as long as you are open to innovation.</p>
+<p>After the brief explanation, let&#39;s open our browser settings <strong>and</strong> click on the &quot; <strong>Privacy and Security</strong> &quot; tab to browse the settings that concern our privacy .</p>
+<p><img src="../img/docs/3/87.jpg" class="responsive"></p>
+<p><img src="../img/docs/3/88.jpg" class="responsive"></p>
+<h3 id="onion-services">Onion Services</h3>
+<p><img src="../img/docs/3/89.jpg" class="responsive"></p>
+<p>With this setting, &quot;onion available&quot; info will appear if the website you are visiting has a known onion service address. You can visit <a class="d-inline-block mb-0 text-danger" href="http://torproject.org/">torproject.org</a> to try it out.<p><img src="../img/docs/3/90.jpg" class="responsive"></p> As you can see, it is stated here that the website you visited has an onion address. If you click on it, you will be redirected to the onion address.<p><img src="../img/docs/3/91.jpg" class="responsive"></p> If you set the onion service setting to &quot;always&quot;, if the website you visit has a known onion address, you will be automatically redirected to that address without asking you.<p><img src="../img/docs/3/92.jpg" class="responsive"></p> You can visit <a class="d-inline-block mb-0 text-danger" href="http://torproject.org/">torproject.org</a> again to try it out. As you can see you automatically redirected onion address.</p>
+<h3 id="cookies-and-site-data">Cookies and Site Data</h3>
+<p><img src="../img/docs/3/93.jpg" class="responsive"></p>
+<p>The settings in this section allow you to control the cached data of the sites. You can perform operations such as deleting and managing from here. However, as you can see, all data records are currently marked to be deleted automatically when you close the browser.<p><img src="../img/docs/3/94.jpg" class="responsive"></p> This is because the &quot; <strong>Always use private browsing mode</strong> &quot; option at the bottom is active. With this feature, you can use your Tor browser without leaving any traces about any website.<p><img src="../img/docs/3/95.jpg" class="responsive"></p> My suggestion is to keep this setting active to ensure privacy. However, if you still want to keep the data of your past visits and visited sites, you can customize the settings here as you wish.</p>
+<h3 id="logins-and-passwords">Logins and passwords</h3>
+<p><img src="../img/docs/3/96.jpg" class="responsive"></p>
+<p>The &quot;Use master password&quot; feature here ensures that if there are passwords for your logins in the Tor browser, these passwords are also protected with a master password. This means that If you create a Master Password you will be asked to enter it once per session when Tor Browser retrieves saved information protected by the password. In other words, it provides an extra protection for local security. This feature prevents someone who has accessed your browser locally from accessing your information. I mean by the &quot;accessing locally&quot;, it describes situations such as your computer being for inspection or hacking by someone.<p><img src="../img/docs/3/97.jpg" class="responsive"></p> However, you should note that if you forget the master password, you will never be able to access data stored on the your tor browser. So while setting a password, make sure you set one that you will not forget, as well as strong.</p>
+<h3 id="permissions">Permissions</h3>
+<p><img src="../img/docs/3/98.jpg" class="responsive"></p>
+<p>While we were talking about permissions earlier, we mentioned that you can define special permissions settings to websites. Unlike the permission settings we mentioned earlier, the permissions setting here allows you to define common permission setting for all websites in the tor browser.</p>
+<p>For example, if you take a look at the location setting; In the window that opens, if you have defined a website that can access location information exceptionally, it will appear. In addition , it will be sufficient to <strong>check the</strong> &quot; <strong>Block new requests asking to access your location</strong>&quot; option below to completely block location information except for exceptional websites .</p>
+<p><img src="../img/docs/3/99.jpg" class="responsive"></p>
+<p>I suggest you select this option for all permissions one by one if not selected by default. Since you can change these permissions specific to the website, it would be much better to block these permissions altogether in order to ensure general protection.</p>
+<p>In addition, I strongly recommend that you choose the &quot; <strong>Prevent accessibility services from accessing your browser</strong> &quot; option under the permissions .<p><img src="../img/docs/3/98.jpg" class="responsive"></p> To fully understand the purpose of this feature, you can get brief information here. However, as I said, my suggestion is to prevent accessibility services from accessing the browser if you don&#39;t need to use accessibility services.</p>
+<h3 id="security">Security</h3>
+<p><img src="../img/docs/3/100.jpg" class="responsive"></p>
+<p>In this section, there are security levels that you can use to neutralize possible attacks from all websites you visit or will visit.</p>
+<p><strong>If the &quot;standard&quot; security level</strong> is <strong>selected</strong>, your browser will behave just like an standard web browser, vulnerable to many possible attacks from websites. It has already been state here that all tor browser and website features will be enable at this security level. So this option does not impose any restrictions.</p>
+<p><strong>If the &quot;safer&quot; security level is selected</strong> , partial security is provided by disabling the features specified in the list. Of course, there may be losses in the functionality of the site used together with the closed features.</p>
+<p><strong>If the &quot;safest&quot; security level is selected</strong> , many features of websites will be disabled for even more comprehensive security. It is generally used to access the website in a much more simple and secure way. Disabled features are noted in the list.</p>
+<p>Please also note that all disabled features may vary based on discovered vulnerabilities over time. In other words, in addition to the features that appear in me now, different features may have been disabled in the period you use.</p>
+<p>Ultimately, using these security levels, you have to choose and consider the status of the website you want to communicate with. If the website you are visiting is unreliable and you still have to visit it, you can choose &quot;<strong>safest</strong>&quot; security level. Or, if the surface is one of the reliable services on the web, you can just select &quot;<strong>standard</strong> &quot; or &quot;<strong>safer</strong> &quot; option. It&#39;s all about what you can expect from the website and what kind of the site is.</p>
+<h3 id="deceptive-content-and-dangerous-software-protection">Deceptive Content and Dangerous Software Protection</h3>
+<p><img src="../img/docs/3/101.jpg" class="responsive"></p>
+<p>If you activate the feature in this section, you will be warned before accessing content with a previously reported security risk. In additionally if you want to block dangerous downloads you can activate &quot;block dangerous downloads&quot; option. Enabled this feature can help you avoid unintentional security risks.</p>
+<h3 id="certificates">Certificates</h3>
+<p><img src="../img/docs/3/102.jpg" class="responsive"></p>
+<p>It would be more better choice to keep the certificate settings &quot;ask you every time&quot; selected. However, if you have a special situation, you can choose to &quot;select one automatically&quot;.</p>
+<h3 id="details-for-additional-security">Details for Additional Security</h3>
+<p>Extensions to secure the browser are already installed by default. Apart from these, it is strongly not recommended to install new extensions.</p>
+<p><img src="../img/docs/3/103.jpg" class="responsive"></p>
+<p>Similar to extensions, I strongly recommend that you don&#39;t install new themes and use the default theme among existing themes. It is never recommended to change such default settings for a much more ambiguous user identity we mentioned earlier.</p>
+<p>Installing new extensions can affect Tor Browser in unpredictable ways, causing the Tor browser you are using to create a unique fingerprint. If your Tor browser has a unique fingerprint, that is, if you have a usage habit that can be noticed among other users, your actions will no longer be anonymous and you can be tracked even if you are using Tor Browser.</p>
+<p>Basically, the settings and features of each web browser create a unique &quot; <strong>web browser fingerprint</strong> &quot;. Since most web browsers do not care about this, each user can create a unique fingerprint that can be tracked on the internet. Unlike standard browsers, the Tor browser is specifically designed to ensure that users&#39; fingerprints are nearly the same. This means that the fingerprints of all Tor Browser users are similar. This situation makes it difficult to track tor user.</p>
+<p>Also, each new extension has the potential to increase the attack surface of the Tor Browser application. This could cause personal data to be leaked or an attacker to infect Tor Browser with malware. Even the extension itself may have been maliciously designed to track you.</p>
+<p>Tor Browser application comes with &quot;HTTPS Everywhere&quot; and &quot;NoScript&quot; extensions installed. Installing a extension other than that may prevent you from being anonymous. However, over time, there may be changes in the extension used by default, that is, the extension that come with the Tor browser. If this is the case, the Tor browser has made it available because it is sure of the security and benefits of this extension . However, if you are skeptical about the any extension , you can find a lot of information about why the add-on is located on the Tor browser and its possible effects by doing a short internet search. You can also follow the Tor project&#39;s blog to many such news.</p>
+<p>For now, adding a new extension is not on the agenda, but this situation may have changed during the period you followed the course. To stay safe, I recommend you to be a conscious user, that is, to constantly question and research. Please note that when it comes to security, you have a very large part of the responsibility.</p>
+<p>Similar to the previous clauses, the use of plugins or language packs should not be used as it may pose a risk to the integrity of your privacy.</p>
+<p>Finally, I don&#39;t recommend using the browser in full screen mode or maximized mode. If you use full screen, you may leak information about the size of the screen you are using. This seemingly unimportant detail is important, and as a habit, I strongly recommend using your browser always with standard windowed size. If all these measures seem too much for you, I would like to point out that security is a whole and the number of details who should pay attention according to the needs of people must increase at the expense of being paranoid. If I need to give a simple but striking example for the moment; It turned out that <a class="d-inline-block mb-0 text-danger" href="https://www.youtube.com/watch?v=ZrkZUO2g4DE" class=" stretched-link">data can be stolen from isolated computers without internet connection by changing the screen brightness</a>.</p> 
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZrkZUO2g4DE" allowfullscreen></iframe>
+</div>
+<p>So when it comes to security and privacy, it isn&#39;t strange to be paranoid. Please keep in mind that security is just a temporary illusion, that illusion tricks have to be exposed when the day comes. In short, in the real world, security is just a perception, we only think we are safe until it is violated. While the sense of temporary security is good for well-being, in most cases it is the complacency it provides that brings the real security risk. I&#39;m not saying be paranoid, but I always wanted to mention that it will be a good habit to research what you can do for more security.</p>
+<h1 id="android-tor-browser-installation">Android Tor Browser Installation</h1>
+<p>While you don&#39;t have access to your desktop devices, you can use the Tor browser developed specifically for the Android platform to securely access the Tor network on your Android device. First, let&#39;s open PlayStore. To get the browser,  simply search for &quot; <strong>Tor Browser</strong> &quot; on the <strong>PlayStore</strong> . Let&#39;s install the application published by Tor developers.<p><img src="../img/docs/3/104.jpg" class="responsive"></p> Other applications offered by developers other than Tor developers are not secure. So make sure you download the right application.</p>
+<p>After the installation is completed, let&#39;s open the application and click the &quot; <strong>Connect</strong> &quot; button and wait for the browser to connect to the tor network.<p><img src="../img/docs/3/105.jpg" class="responsive"></p> You can choose the level of security you want to use the browser from here. Which features are disabled at what level is clearly written here.</p>
+<p><img src="../img/docs/3/106.jpg" class="responsive"></p>
+<p>After the selection, just type the web address you want to go to in the bar here. I visit <a class="d-inline-block mb-0 text-danger" href="http://check.torproject.org">check.torproject.org</a> to confirm that I am connected to the tor network.</p>
+<p><img src="../img/docs/3/107.jpg" class="responsive"></p>
+<p>And as you can see I can confirm here that I am connected to the tor network. So, i can use this application to surf the Tor network with my Android device when necessary.</p>
+<p><img src="../img/docs/3/108.jpg" class="responsive"></p>
+<p><img src="../img/docs/3/109.jpg" class="responsive"></p>
+<p>When we look at the settings of the browser, there are settings customized for Tor in addition to the settings of standard web browsers.<p><img src="../img/docs/3/110.jpg" class="responsive"></p>  For example, you can change the security level in the security settings.<p><img src="../img/docs/3/111.jpg" class="responsive"></p>  In the Tor network section, you can see the connection status to the tor network and configure a bridge if you want.<p><img src="../img/docs/3/113.jpg" class="responsive"></p><p><img src="../img/docs/3/114.jpg" class="responsive"></p>   To use a bridge, simply enable the &quot;use a bridge&quot; feature. <p><img src="../img/docs/3/115.jpg" class="responsive"></p> This will automatically provide a bridge connection. Also, if you wish, you can manually enter bridge information from the &quot;provide a bridge i know&quot; section.<p><img src="../img/docs/3/116.jpg" class="responsive"></p>  The other settings here are standard settings that you already know. We already talked about all of these settings when describing the Tor browser desktop version. The settings we mentioned are exactly the same for this browser. You can change it if you need.</p>
+<h1 id="about-ios-tor-browser">About iOS Tor Browser</h1>
+<p>Tor developers recommend an iOS app called Onion Browser, which is open source, uses Tor routing, and is developed by someone who works closely with the Tor Project.<p><img src="../img/docs/3/117.jpg" class="responsive"></p>  However, Apple requires browsers on iOS to use something called Webkit, which prevents Onion Browser from having the same privacy protections as Tor Browser.<p><img src="../img/docs/3/118.jpg" class="responsive"></p>  You can check out the link in this lecture resource to <a class="d-inline-block mb-0 text-danger" href="https://blog.torproject.org/tor-heart-onion-browser-and-more-ios-tor" class=" stretched-link">learn more details</a>.</p>
+<p>I don&#39;t recommend using it unless it is not have to. As I don&#39;t think it safe, also i won&#39;t discuss alternative iOS applications and their uses in this lecture. Only if you really need it, you can find this Onion Browser develop by Mike Tigas by searching through the App Store, <strong>but is unreliable about security and privacy</strong>. If the developers of the Tor project release a stable iOS application, I will have included in this section already.</p>
+<h1 id="summary">Summary</h1>
+<p>We saw all the settings that concern us on Tor Browser and talked about all the configurations required for our security. At this point, you might be thinking, <strong><em>&quot;He&#39;s told all this but still hasn&#39;t touched on how to surf Tor hidden services in other words, Dark Web sites</em></strong> .&quot; If so, I would like to clarify again briefly the situation we have explained before and clear all possible confusion.</p>
+<p>In this section, you learned how to connect to the Tor network through the Tor browser and how the browser security settings should be when using the Tor browser. So you have seen how you can surf anonymously on the &quot;Surface Web&quot; over the Tor browser. As a matter of fact, the &quot;<a class="d-inline-block mb-0 text-danger" href="http://check.torproject.org">check.torproject.org</a>&quot; address you visit is a standard website in the area we call &quot;Surface Web&quot;. In other words, with the information you have learned so far, you can surf the &quot;Surface Web&quot; more securely and anonymously than ever before, by overcoming all obstacles via the Tor browser. Apart from that, if you are wondering how you can access &quot;.onion&quot; hidden services, namely &quot;Dark Web&quot; sites on Tor, we will discuss this issue in detail in the future. For now, you just have to be a little more patient and continue to study by adhering to the course curriculum, being aware that all the course content is interconnected.</p>
+<p>At the end of the course; You will realize yourself that all the course curriculum are prepared in a way that will make it easier for you to learn by progressing in kenjankşın with each other. In the next section, we will continue explanations the Tail operating system, which is considered to be much safer than using only the Tor browser.</p>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 2. Section</strong>
+          <h3 class="mb-0">What is Tor & How Does Tor Work?</h3>
+          <a href="./2.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 4. Section <i class="fa fa-chevron-right"></i></strong>
+          <h3 style="text-align:right;" class="mb-0">Tor Hidden Services | DarkWeb</h3>
+          <a href="./4.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro-udemy-free.png" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Free Anonymity & Privacy Course on Udemy</h3></strong>
+                <p class="card-text">You can click on this card to enroll for the free udemy course of the tutorial series here. Please note that this course is introductory training only. This free course will provide you with an introductory knowledge of anonymity and privacy.</p>
+            </div>
+			
+        </div>
+		<a class="d-inline-block mb-0 text-danger" href="https://www.udemy.com/course/draft/4221902/" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro-youtube.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Free Anonymity & Privacy Course on Youtube</h3></strong>
+                <p class="card-text">You can click on this card to access the free youtube playlist of the tutorial series. Please note that this tutorial series is introductory training only. This free tutorial series will only provide you with an introductory knowledge of anonymity and privacy.</a></p>
+            </div>
+			
+        </div>
+		<a class="d-inline-block mb-0 text-danger" href="https://www.youtube.com/playlist?list=PL-lGItuwUSeC7fouP446Znc1tw2tevGoA" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>

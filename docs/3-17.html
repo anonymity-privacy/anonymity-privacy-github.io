@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 3. Section: Verifying the Installation File
+
+</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">3. Section 17. Lecture</strong>
+          <h3 class="mb-0">Verifying the Installation File
+
+</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article class="markdown-body entry-content" itemprop="text">
+			 <h1 id="verifying-the-installation-file">Verifying the Installation File</h1>
+			 <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SiDLv16Jdpo" allowfullscreen></iframe>
+</div>
+<p>Regardless of where you downloaded the installation files, the contents of the installation files may have been changed by the attackers before or during the download process.</p>
+<p>For example, a file you downloaded from the Tor project&#39;s website may have been replaced by a malicious version by the attackers.</p><p><img src="../img/docs/3/11.jpg" class="responsive"></p> <p>Although such a possibility seems unlikely to many, I would like to remind you that in 2016, Linux Mint servers were hacked and installation image files were replaced with malicious files, and many people downloaded and installed malicious versions of Mint. <a class="d-inline-block mb-0 text-danger" href="https://blog.linuxmint.com/?p=2994">You can browse</a> for the source .</p>
+<p>In addition, even if the direct download source is not hacked, at any time during your download process, the file may have been changed with the malicious version by the attackers who control your internet connection.</p>
+<p><img src="../img/docs/3/12.jpg" class="responsive"></p>
+<p>The surest solution to this and similar scenarios is to verify the downloaded file.</p>
+<p>For verification, you need to compare the digital signature published by the developers of the Tor project with the signature of your current installation file.</p>
+<p>Digital signatures are unique signatures only assigned by developers to the respective version of the program. Since even the slightest change in the content of the installation file will cause this signature to change, you can easily test whether the file has been changed or not through the signature.</p>
+<p><img src="../img/docs/3/13.jpg" class="responsive"></p>
+<p>When you downloaded the setup file, remember I mentioned that you need to download signature files with &quot;<strong>.asc</strong>&quot; extension in addition to the setup file. These &quot; <strong>.asc</strong> &quot; file are actually signature file created with the <strong>PGP</strong> encryption protocol. This file contain a uniquely generated key. Thanks to this file, we can test whether the content of the program has been changed or not. If you haven&#39;t downloaded this signature file, go to the download source and download the signature file of the Tor Browser version you downloaded. <strong>To avoid problems during the verification phase, make sure you download the signature file of the exact tor browser version you downloaded earlier. Otherwise, the verification will fail.</strong></p>
+<p>Don&#39;t worry if the terms I use seem unfamiliar and incomprehensible to you. When you come to the &quot;Encryption&quot; section in the rest of the course, i will be talking more about this terms separately. For now, you only need to focus on verification process. When this process is quite simple, you shouldn&#39;t have any problems if you follow the guide carefully.</p>
+<p>After obtaining the setup file and signature file, you need to use a separate tool to test the setup file. Although this tool differs according to the operating system used, the functions and uses of them are basically the same.</p>
+<p>For example, we will use the <strong>Gpg4win</strong> tool to verify the signature on <strong>Windows</strong> . <strong>On MacOS</strong> , we will verify the signature with the tool called <strong>GPG Suite</strong> . Finally, we will test signature on <strong>Linux</strong> using a verification tool <strong>that</strong> is <strong>already installed</strong> .</p>
+<p><img src="../img/docs/3/14.jpg" class="responsive"></p>
+<p>We will be handling the verification and setup processes one by one specifically for the operating system. So you can directly throw the verification and installation video for the operating system you are not using. We will already be discussing how you can implement the same process in each of them on the current operating system.</p>
+<p>Without further ado, let&#39;s start by discussing how you can verify and install the Tor Browser installation file on the &quot;Windows&quot; system.</p>
+
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 16. Lecture</strong>
+          <h3 class="mb-0">Download via E-Mail
+</h3>
+          <a href="./3-16.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 18. Lecture <i class="fa fa-chevron-right"></i></strong>
+          <h3 class="mb-0">Tor Browser Verification and Installation (Windows)
+
+
+</h3>
+          <a href="./3-18.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>

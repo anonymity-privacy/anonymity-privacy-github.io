@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Privacy & Anonymity For Everyone | 3. Section: Tor Browser Verification and Installation (Windows)
+
+</title>
+	<link rel="icon" href="../img/menu/icon.png" type="image/icon type">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>	
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+	
+<nav class="navbar y-navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  
+  <div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+		
+</nav>
+
+<nav class="navbar x-navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+	
+	<div class="container ">
+            <div align="left">
+		<a href="../index.html" class="btn"  ><i class="fa fa-home fa-lg"></i></a></div>
+
+			<div align="right">
+			<div class="togg-wrap">
+			
+			<button onclick="tema()" class="btn" ><i class="fa fa-adjust fa-lg"></i></button>  
+				<a href="../feedback.html" class="btn" ><i class="fa fa-paper-plane"></i></a>    
+		</div>              
+	</div>              
+	</div>
+     
+</nav>
+
+	
+	
+
+    
+  <div class="container">   
+  
+        <p></p>
+		<div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+	  <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../img/intro.jpg" class="card-img-top img1">
+		</div>
+        <div class="col-md-8">
+            <div class="card-body">
+		<strong class="d-inline-block mb-0 text-danger"><h3 >Complete Anonymity & Privacy Course</h3></strong>
+                <p class="card-text">The following tutorial series is a small part of the complete "<b>Anonymity</b>" & "<b>Privacy</b>" course. If you want to reach the whole training series, ask questions and support to this project, you can enroll for the course. <a class="d-inline-block mb-0 text-danger">You can click on this card to view the course.</a></p>
+            </div>
+			
+        </div>
+		<a href="https://www.udemy.com/course/dark-web-privacy-anonymity-security/?referralCode=EBEF89E94EC39B3D210C" class=" stretched-link"></a>
+    </div>
+        
+      </div>
+	  <div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+          <strong class="d-inline-block text-danger">3. Section 18. Lecture</strong>
+          <h3 class="mb-0">Tor Browser Verification and Installation (Windows)
+
+</h3>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	          <article class="markdown-body entry-content" itemprop="text">
+			 <h1 id="tor-browser-verification-and-installation-windows-">Tor Browser Verification and Installation (Windows)</h1>
+			 <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4SKTT294qkU" allowfullscreen></iframe>
+</div>
+<p>Before the installation process, you should perform signature check to verify the content of the setup file you downloaded. You can use the official guide to follow the verification steps easily. I added this verification guide link in this lecture sources.</p>
+<p>Since you will use the &quot; <strong>Gpg4win</strong> &quot; tool as i mentioned before to check the signature on Windows, you need to get this tool first.</p>
+<p>To download the &quot; <strong>gpg4win</strong> &quot; tool, open the download page by visiting <a class="d-inline-block mb-0 text-danger" href="https://gpg4win.org/"></a><a class="d-inline-block mb-0 text-danger" href="https://gpg4win.org">https://gpg4win.org</a> . If you want to donate, you can specify the amount you want here. If you are not going to donate, select the &quot;0&quot; amount and click the download button.</p>
+<p><img src="../img/docs/3/15.jpg" class="responsive"></p>
+<p>Now, you can install the tool quickly after the download. During the setup process, you can complete the steps without changing the default settings. It asks to reboot the system when the setup process is complete. You don&#39;t have to reboot, so finish the installation process by selecting the reboot later option. That&#39;s how easy <strong>Gpg4win</strong> tool is to install.</p>
+<p>In order to verify the signature, you first need to import the developer key. For this, let&#39;s run the <strong>cmd</strong> tool, which is the command prompt on Windows, and enter the command.</p>
+<p><img src="../img/docs/3/16.jpg" class="responsive"></p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --auto-key-locate nodefault,wkd --locate-keys torBrowser@torproject.org</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	<p><img src="../img/docs/3/17.jpg" class="responsive"></p>
+	<p>When you enter the command correctly, the developer key is imported as you can see.</p>
+<p>After this process, let&#39;s enter command by specifying the locations of the setup and signature files downloaded. Since the files I download are in the downloads folder, I enter command in this way. When entering the command, it is important that you first specify the signature file, that is, follow the command order. When you click the tab key while typing the file names, the name will be completed automatically.</p>
+<div align="center" class="col">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+        <div class="col d-flex flex-column position-static">
+
+          <strong class="mb-0">gpg --verify Downloads\\TorBrowser-install-XYZ_en-US.exe.asc Downloads\\TorBrowser-install-XYZ_en-US.exe</strong>
+		  <p></p>
+        </div>
+        
+      </div>
+    </div>
+	<p><img src="../img/docs/3/18.jpg" class="responsive"></p>
+	<p>And as a result, the output i got matched with the developer key i imported, proving that my file is signed by the Tor developers and has not been modified. If your file was a modified file, you wouldn&#39;t be able to get this output as this signature match wouldn&#39;t be provided. In this case, you need to download the setup file and verification key from an alternative download source again and try this verification process again.</p>
+<p>Now that we&#39;ve verified setup file, we can start the Tor Browser installation by double-clicking the setup file.</p>
+<p>You can select the language to be used during the installation process here. I continue unchanged.</p><p><img src="../img/docs/3/19.jpg" class="responsive"></p> <p>Unlike many programs, when the Tor browser is installed, it does not spread throughout the system. It maintains all files in a single file location. We can choose where to location the file from the window that opens.</p><p><img src="../img/docs/3/20.jpg" class="responsive"></p> <p>I am not changing the default file location. If you wish, you can specify a different location. The installation process is completed in a short time. If you want to create a shortcut to the start menu and the desktop, you can click finish without unchecking.</p><p><img src="../img/docs/3/21.jpg" class="responsive"></p><p> In the window that opens, I click the &quot;Connect&quot; button to connect the browser to the Tor network.</p><p><img src="../img/docs/3/22.jpg" class="responsive"></p></p> After a short while, the connection is ready and TOR browser is opened without any problems.</p>
+<p><img src="../img/docs/3/23.jpg" class="responsive"></p>
+<p>Also, when you check, you can confirm that Tor browser is installed in the folder named &quot; <strong>Tor Browser</strong> &quot; on the desktop . This is how we safely downloaded and installed Tor browser. We will discuss its use in detail in the next lectures.</p>
+<p>Finally, I would like to point out that it isn&#39;t have to perform the verification process, but it is an extremely important detail for your security. As there is no difficulty at verification steps, I strongly recommend that you verify before the installation process.</p>
+<p>In the next lecture, we will perform the same verification and installation process, this time for the Mac operating system. So if you are not using macOS, you can skip the next lecture directly.</p>
+
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger"><i class="fa fa-chevron-left"></i> Previous: 17. Lecture</strong>
+          <h3 class="mb-0">Verifying the Installation File
+
+</h3>
+          <a href="./3-17.html" class=" stretched-link"></a>
+			
+        </div>
+        
+      </div>
+    </div>
+		<div class="col-md-6">
+      <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="text-align:right;" class="d-inline-block mb-2 text-danger">Next: 19. Lecture <i class="fa fa-chevron-right"></i></strong>
+          <h3 class="mb-0">Tor Browser Verification and Installation (MacOS)
+
+
+</h3>
+          <a href="./3-19.html" class=" stretched-link"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</article>
+<p></p>  
+<div align="center">
+
+	<h1 id="feedback">📮 Give Feedback</h1>
+<p>You can report any mistakes you notice.</p>
+	<a href="../feedback.html" class="btn btn-primary">Give Feedback</a>
+	  </div>
+     <p></p>
+    </div>
+
+    
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/script.js"></script>	
+<script src="../js/prism.js"></script>		
+ 
+
+
+</body>
+</html>
