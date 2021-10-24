@@ -131,9 +131,18 @@ body{
 	border-color:var(--font-color);
 	
 }
-
-
-	 
+.text-danger {
+    color: #673ab7!important;
+}
+.alert-danger {
+    color: #673ab7;
+    background-color: #5f05ff29;
+    border-color: #673ab742;
+}
+.btn-outline-danger {
+    color: #673ab7;
+    border-color: #673ab7;
+}	 
 	
 	
 
